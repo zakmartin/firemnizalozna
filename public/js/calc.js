@@ -90,40 +90,10 @@
     });
   }
 
-  // CTA „Chci tuto nabídku probrat" — otevře modal s formulářem a předvyplněnými hodnotami.
-  // Kartu formuláře přesouváme do modalu (a zpět), takže existuje jen jedna instance formuláře.
+  // CTA „Chci tuto nabídku probrat" — otevře sdílený modal s formulářem (main.js)
+  // a předvyplní poznámku hodnotami z kalkulačky.
   var cta = document.getElementById('calcCta');
-  var formCard = document.querySelector('.fz-precta__form-card');
-  if (cta && formCard) {
-    var marker = document.createComment('fz-form-home');
-    var modal = null;
-    var slot = null;
-    var lastFocus = null;
-
-    var buildModal = function () {
-      modal = document.createElement('div');
-      modal.className = 'fz-modal';
-      modal.id = 'calcModal';
-      modal.setAttribute('role', 'dialog');
-      modal.setAttribute('aria-modal', 'true');
-      modal.setAttribute('aria-label', EN ? 'No-obligation offer' : 'Nezávazná nabídka');
-      modal.hidden = true;
-      modal.innerHTML =
-        '<div class="fz-modal__backdrop" data-modal-close></div>' +
-        '<div class="fz-modal__dialog">' +
-        '<button type="button" class="fz-modal__close" data-modal-close aria-label="' + (EN ? 'Close' : 'Zavřít') + '">✕</button>' +
-        '<div class="fz-modal__slot"></div>' +
-        '</div>';
-      document.body.appendChild(modal);
-      slot = modal.querySelector('.fz-modal__slot');
-      modal.addEventListener('click', function (e) {
-        if (e.target.closest('[data-modal-close]')) closeModal();
-      });
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && !modal.hidden) closeModal();
-      });
-    };
-
+  if (cta && window.fzFormModal) {
     var prefillNote = function () {
       var note = document.getElementById('lead-message');
       var ctx = null;
@@ -137,36 +107,21 @@
       note.dataset.autofilled = '1';
     };
 
-    var openModal = function () {
-      if (!modal) buildModal();
-      lastFocus = document.activeElement;
-      formCard.parentNode.insertBefore(marker, formCard);
-      slot.appendChild(formCard);
-      modal.hidden = false;
-      document.body.classList.add('modal-open');
+    var openOffer = function () {
       prefillNote();
-      var first = formCard.querySelector('#lead-name');
-      if (first) first.focus();
+      window.fzFormModal.open();
       if (window.fzConsent && window.fzConsent.analytics) {
         document.dispatchEvent(new CustomEvent('fz:event', { detail: { name: 'calc_cta' } }));
       }
     };
 
-    var closeModal = function () {
-      modal.hidden = true;
-      document.body.classList.remove('modal-open');
-      marker.parentNode.insertBefore(formCard, marker);
-      marker.parentNode.removeChild(marker);
-      if (lastFocus) lastFocus.focus();
-    };
-
     cta.addEventListener('click', function (e) {
       e.preventDefault();
-      openModal();
+      openOffer();
     });
 
     // přímý odkaz / testování: /#nabidka otevře modal rovnou (po inicializaci kalkulačky)
-    if (location.hash === '#nabidka') setTimeout(openModal, 80);
+    if (location.hash === '#nabidka') setTimeout(openOffer, 80);
   }
 
   update(true);

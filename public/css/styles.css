@@ -2162,6 +2162,135 @@ body.modal-open {
   overflow: hidden;
 }
 
+/* ===== PLOVOUCÍ BADGE SPECIALISTY (vpravo dole) ===== */
+.fz-agent {
+  position: fixed;
+  right: 20px;
+  bottom: calc(20px + env(safe-area-inset-bottom));
+  z-index: 250;
+}
+
+.fz-agent__toggle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  padding: 0;
+  position: relative;
+  background: #e9e3f2;
+  box-shadow: 0 10px 30px rgba(21, 16, 31, .28);
+  transition: transform .15s;
+}
+
+.fz-agent__toggle:hover {
+  transform: scale(1.05);
+}
+
+.fz-agent__toggle img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.fz-agent__dot {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  background: var(--green);
+  border: 2.5px solid #fff;
+  border-radius: 50%;
+}
+
+.fz-agent__panel {
+  position: absolute;
+  right: 0;
+  bottom: 78px;
+  width: 296px;
+  background: var(--bg-white);
+  border: 1px solid rgba(28, 34, 40, .08);
+  border-radius: 14px;
+  box-shadow: 0 24px 64px rgba(21, 16, 31, .25);
+  padding: 20px;
+  display: none;
+}
+
+.fz-agent.is-open .fz-agent__panel {
+  display: block;
+  animation: fzFadeUp .25s ease both;
+}
+
+.fz-agent__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.fz-agent__head img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #e9e3f2;
+}
+
+.fz-agent__head strong {
+  display: block;
+  font-family: var(--f-head);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.fz-agent__head span {
+  display: block;
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.fz-agent__phone {
+  display: block;
+  font-family: var(--f-head);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--fz-accent-dark);
+}
+
+.fz-agent__phone:hover {
+  text-decoration: underline;
+}
+
+.fz-agent__hours {
+  display: block;
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin: 2px 0 14px;
+}
+
+.fz-agent__btns {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fz-agent__btns .btn {
+  min-height: 44px;
+  padding: 10px 16px;
+  font-size: 14.5px;
+}
+
+@media (max-width: 640px) {
+
+  /* na mobilu je sticky lišta „Zavolejte mi" — badge by se s ní tloukl */
+  .fz-agent {
+    display: none;
+  }
+}
+
 /* ===== FOOTER (čistý, světlý) ===== */
 .fz-footer {
   background: var(--bg-white);

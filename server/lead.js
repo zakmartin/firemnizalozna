@@ -24,7 +24,8 @@ function validate(body) {
     ts: new Date().toISOString(),
   };
 
-  if (!lead.name) errors.name = 'required';
+  // jméno je povinné, výjimkou je rychlá žádost o zavolání (stačí telefon)
+  if (!lead.name && !lead.phone) errors.name = 'required';
   if (!lead.phone && !lead.email) errors.contact = 'phone_or_email_required';
   if (lead.phone && !PHONE_RE.test(lead.phone)) errors.phone = 'invalid';
   if (lead.email && !EMAIL_RE.test(lead.email)) errors.email = 'invalid';
