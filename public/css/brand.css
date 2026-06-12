@@ -1,0 +1,20 @@
+/* Firemní záložna — brand token overrides (světlá verze: bílý web, tmavý jen text) */
+:root {
+  /* "bg" plochy (nav, hero, footer) jsou bílé; "darker" je světle fialový povrch karet */
+  --brand-bg:               #ffffff;
+  --brand-bg-rgb:           255, 255, 255;
+  --brand-darker:           #f6f3fb;
+  --brand-surface:          #f5f2fa;
+  --brand-accent:           #8b35dd;
+  /* pozor: tokeny "text-on-dark" nesou na světlém webu TMAVÝ text (sémantika = text na brand pozadí) */
+  --brand-text-on-dark:     #1c2228;
+  --brand-text-on-dark-rgb: 28, 34, 40;
+
+  /* FZ-specific tokens */
+  --fz-grad:        linear-gradient(135deg, #c44ad2, #7d2ae8);
+  --fz-grad-soft:   linear-gradient(135deg, rgba(196, 74, 210, .12), rgba(125, 42, 232, .12));
+  --fz-accent-dark: #6f25cf;
+  --fz-success:     #1d7a44;
+  --fz-error:       #b02a2a;
+  --fz-r:           6px; /* banka-light: ostřejší radius pro FZ komponenty */
+}

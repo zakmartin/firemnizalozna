@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="88" viewBox="0 0 300 88" role="img" aria-label="Firemní záložna">
+  <defs>
+    <linearGradient id="fzg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c44ad2"/>
+      <stop offset="1" stop-color="#7d2ae8"/>
+    </linearGradient>
+  </defs>
+  <g stroke="url(#fzg)" stroke-width="15" stroke-linecap="round" fill="none">
+    <path d="M22 73 V15"/>
+    <path d="M22 15 H64"/>
+    <path d="M22 45 H54"/>
+    <path d="M88 15 H132"/>
+    <path d="M132 15 L88 73"/>
+    <path d="M88 73 H132"/>
+  </g>
+  <g fill="#1c2228" font-family="Manrope, 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="21" letter-spacing="5">
+    <text x="162" y="38">Firemní</text>
+    <text x="162" y="66">záložna</text>
+  </g>
+</svg>

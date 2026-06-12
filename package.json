@@ -1,0 +1,20 @@
+{
+  "name": "firemnizalozna.cz",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Firemní záložna — statický web + Express (/api/lead). Člen skupiny CFG.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch --env-file=.env server/index.js",
+    "generate": "node tools/generate-cz.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "optionalDependencies": {
+    "nodemailer": "^6.9.0"
+  }
+}

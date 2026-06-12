@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /wp-admin/
+Disallow: /wp-json/
+Disallow: /xmlrpc.php
+
+Sitemap: https://www.firemnizalozna.cz/sitemap.xml
