@@ -361,8 +361,11 @@
         ? '<button type="button" class="btn btn--ghost-dark" data-agent-msg>' + T.message + '</button>'
         : '<a class="btn btn--ghost-dark" href="' + relPrefix + (EN ? 'en/contact/' : 'kontakt/') + '">' + T.message + '</a>') +
       '</div></div>' +
+      '<div class="fz-agent__bar">' +
       '<button type="button" class="fz-agent__toggle" aria-expanded="false" aria-controls="agentPanel" aria-label="' + T.toggle + '">' +
-      '<img src="' + photo + '" alt="" width="64" height="64"><span class="fz-agent__dot" aria-hidden="true"></span></button>';
+      '<img src="' + photo + '" alt="" width="48" height="48"><span class="fz-agent__dot" aria-hidden="true"></span></button>' +
+      '<a class="fz-agent__id" href="tel:+420771528747"><strong>Aleš Mráz</strong><span>771 528 747</span></a>' +
+      '</div>';
     document.body.appendChild(agent);
 
     var toggle = agent.querySelector('.fz-agent__toggle');

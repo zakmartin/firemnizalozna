@@ -265,12 +265,7 @@ ${navLinks}
 
 function cookieBarAndScripts(lang) {
   const t = T[lang];
-  return `  <a href="tel:+420771528747" class="fz-call-sticky">
-    ${PHONE_ICON}
-    ${t.sticky}
-  </a>
-
-  <div class="fz-cookies" id="cookieBar" role="dialog" aria-modal="false" aria-labelledby="cookieTitle">
+  return `  <div class="fz-cookies" id="cookieBar" role="dialog" aria-modal="false" aria-labelledby="cookieTitle">
     <h2 id="cookieTitle">${t.ckTitle}</h2>
     <p>${t.ckText}</p>
     <div class="fz-cookies__cats">

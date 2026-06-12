@@ -1526,35 +1526,9 @@ input[type="range"].fz-range::-moz-range-thumb {
   overflow: hidden;
 }
 
-/* ===== STICKY CALL (mobile) ===== */
+/* Sticky lišta na mobilu nahrazena plovoucím badge specialisty (.fz-agent) */
 .fz-call-sticky {
   display: none;
-}
-
-@media (max-width: 640px) {
-  .fz-call-sticky {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    position: fixed;
-    left: 16px;
-    right: 16px;
-    bottom: calc(16px + env(safe-area-inset-bottom));
-    z-index: 90;
-    background: var(--fz-grad);
-    color: #fff;
-    font-family: var(--f-head);
-    font-size: 16px;
-    font-weight: 700;
-    min-height: 54px;
-    border-radius: var(--r-pill);
-    box-shadow: 0 10px 30px rgba(125, 42, 232, .4);
-  }
-
-  body {
-    padding-bottom: 86px;
-  }
 }
 
 /* ===== COOKIE BAR ===== */
@@ -2170,15 +2144,52 @@ body.modal-open {
   z-index: 250;
 }
 
+/* zabalený stav: pill s fotkou + klikatelným číslem */
+.fz-agent__bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-white);
+  border: 1px solid rgba(28, 34, 40, .08);
+  border-radius: var(--r-pill);
+  padding: 5px 18px 5px 5px;
+  box-shadow: 0 10px 30px rgba(21, 16, 31, .25);
+}
+
+.fz-agent__id {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.fz-agent__id strong {
+  font-family: var(--f-head);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.fz-agent__id span {
+  font-family: var(--f-head);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.fz-agent__id:hover span {
+  color: var(--fz-accent-dark);
+}
+
 .fz-agent__toggle {
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: none;
   padding: 0;
   position: relative;
   background: #e9e3f2;
-  box-shadow: 0 10px 30px rgba(21, 16, 31, .28);
+  flex-shrink: 0;
   transition: transform .15s;
 }
 
@@ -2207,7 +2218,7 @@ body.modal-open {
 .fz-agent__panel {
   position: absolute;
   right: 0;
-  bottom: 78px;
+  bottom: 68px;
   width: 296px;
   background: var(--bg-white);
   border: 1px solid rgba(28, 34, 40, .08);
@@ -2285,9 +2296,15 @@ body.modal-open {
 
 @media (max-width: 640px) {
 
-  /* na mobilu je sticky lišta „Zavolejte mi" — badge by se s ní tloukl */
+  /* na mobilu je badge hlavní kontaktní prvek — o chlup menší, panel přes šířku */
   .fz-agent {
-    display: none;
+    right: 16px;
+  }
+
+  .fz-agent__panel {
+    bottom: 66px;
+    width: calc(100vw - 32px);
+    max-width: 320px;
   }
 }
 
