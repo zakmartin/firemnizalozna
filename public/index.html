@@ -104,13 +104,13 @@
         <span></span><span></span><span></span>
       </button>
       <nav class="nav__links" id="navLinks" aria-label="Hlavní navigace">
-        <a class="nav__item" href="jak-to-funguje/">Jak to funguje</a>
+        <a class="nav__item" href="jak-to-funguje/">Podnikatelská půjčka</a>
         <a class="nav__item" href="pro-koho/">Pro koho</a>
         <a class="nav__item" href="zajisteni/">Zajištění</a>
-        <a class="nav__item" href="cena/">Cena</a>
+        <a class="nav__item" href="o-nas/">O nás</a>
         <a class="nav__item" href="caste-dotazy/">FAQ</a>
         <a class="nav__item" href="kontakt/">Kontakt</a>
-        <a href="#kalkulacka" class="nav__item nav__cta">Zjistit nezávaznou nabídku</a>
+        <a href="#kontakt" class="nav__item nav__cta" data-open-offer>Zjistit nezávaznou nabídku</a>
       </nav>
     </div>
   </header>
@@ -124,7 +124,7 @@
           <h1>Podnikatelský úvěr na&nbsp;míru <em>do&nbsp;48&nbsp;hodin</em></h1>
           <p class="fz-hero__sub">Individuální posouzení místo bankovního scoringu, minimum papírování a osobní specialista, který za vámi přijede. Pro OSVČ i&nbsp;firmy.</p>
           <div class="fz-hero__ctas">
-            <a href="#kalkulacka" class="btn btn--primary">Zjistit nezávaznou nabídku</a>
+            <a href="#kontakt" class="btn btn--primary" data-open-offer>Zjistit nezávaznou nabídku</a>
             <a href="tel:+420771528747" class="btn btn--ghost" id="callMe">
               <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               Zavolejte mi
@@ -133,42 +133,36 @@
 
           <p class="fz-hero__note">Nabídka je nezávazná, podmínky stanovíme po individuálním posouzení a podle zajištění.</p>
         </div>
-        <div class="fz-hero__art" aria-hidden="true">
-          <!-- Abstraktní grafika: růst podnikání (gradientové sloupce + křivka) -->
-          <svg viewBox="0 0 460 380" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="hg" x1="0" y1="1" x2="1" y2="0">
-                <stop offset="0" stop-color="#c44ad2"/>
-                <stop offset="1" stop-color="#7d2ae8"/>
-              </linearGradient>
-              <linearGradient id="hgf" x1="0" y1="1" x2="0" y2="0">
-                <stop offset="0" stop-color="#7d2ae8" stop-opacity=".55"/>
-                <stop offset="1" stop-color="#c44ad2" stop-opacity=".95"/>
-              </linearGradient>
-            </defs>
-            <g stroke="rgba(28,34,40,.06)">
-              <path d="M0 95h460M0 190h460M0 285h460"/>
-              <path d="M95 0v380M190 0v380M285 0v380M380 0v380"/>
-            </g>
-            <circle class="fz-ring" cx="375" cy="78" r="46" stroke="rgba(28,34,40,.15)" stroke-dasharray="3 6"/>
-            <circle class="fz-pulse" cx="375" cy="78" r="26" fill="url(#hg)" opacity=".25"/>
-            <rect class="fz-bar fz-bar--1" x="48" y="258" width="56" height="86" rx="10" fill="url(#hgf)" opacity=".35"/>
-            <rect class="fz-bar fz-bar--2" x="124" y="216" width="56" height="128" rx="10" fill="url(#hgf)" opacity=".55"/>
-            <rect class="fz-bar fz-bar--3" x="200" y="168" width="56" height="176" rx="10" fill="url(#hgf)" opacity=".75"/>
-            <rect class="fz-bar fz-bar--4" x="276" y="112" width="56" height="232" rx="10" fill="url(#hgf)"/>
-            <path class="fz-line" d="M58 240 C140 220 180 168 232 138 C284 108 330 92 396 60" stroke="url(#hg)" stroke-width="5" stroke-linecap="round" fill="none"/>
-            <path class="fz-arrow" d="M-12 -9 L7 0 L-12 9" stroke="url(#hg)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-            <g fill="rgba(28,34,40,.8)" font-family="Inter, sans-serif" font-size="13" font-weight="600">
-              <g class="fz-chip fz-chip--1">
-                <rect x="40" y="56" width="118" height="36" rx="18" fill="rgba(125,42,232,.06)" stroke="rgba(125,42,232,.2)"/>
-                <text x="58" y="79">do 48 hodin</text>
-              </g>
-              <g class="fz-chip fz-chip--2">
-                <rect x="180" y="20" width="128" height="36" rx="18" fill="rgba(125,42,232,.06)" stroke="rgba(125,42,232,.2)"/>
-                <text x="198" y="43">až 5 mil. Kč</text>
-              </g>
-            </g>
-          </svg>
+        <div class="fz-hero__calc" id="kalkulacka">
+          <div class="fz-calc fz-calc--hero">
+            <div class="fz-calc__controls">
+              <p class="fz-calc__head">Kalkulačka podnikatelského úvěru</p>
+              <div>
+                <div class="fz-calc__group-label">
+                  <label for="calcAmountInput">Výše úvěru</label>
+                  <span><input type="text" id="calcAmountInput" class="fz-calc__value-input" value="300 000" inputmode="numeric" aria-label="Výše úvěru v korunách"><span class="fz-calc__unit">Kč</span></span>
+                </div>
+                <input type="range" class="fz-range" id="calcAmount" min="50000" max="1000000" step="10000" value="300000" aria-label="Výše úvěru" aria-valuetext="300 000 Kč" style="--fill:26%">
+                <div class="fz-range-scale"><span>50 000 Kč</span><span>1 000 000 Kč</span></div>
+              </div>
+              <div>
+                <div class="fz-calc__group-label">
+                  <label for="calcTermInput">Délka splácení</label>
+                  <span><input type="text" id="calcTermInput" class="fz-calc__value-input" value="36" inputmode="numeric" aria-label="Délka splácení v měsících"><span class="fz-calc__unit">měsíců</span></span>
+                </div>
+                <input type="range" class="fz-range" id="calcTerm" min="6" max="60" step="6" value="36" aria-label="Délka splácení v měsících" aria-valuetext="36 měsíců" style="--fill:55%">
+                <div class="fz-range-scale"><span>6 měsíců</span><span>60 měsíců</span></div>
+              </div>
+              <p class="fz-calc__more">Potřebujete víc? <strong>Až 5 000 000 Kč</strong> — <a href="#kontakt">ozvěte se</a>, částky nad 1 mil. Kč posuzujeme individuálně.</p>
+            </div>
+            <div class="fz-calc__result">
+              <span class="fz-calc__result-label">Orientační měsíční splátka</span>
+              <strong class="fz-calc__result-value" id="calcResult" aria-live="polite"><em>9 667 Kč</em></strong>
+              <p class="fz-calc__params" id="calcParams">Úvěr 300 000 Kč · splatnost 36 měsíců · úrok od 9,9 % p.a.</p>
+              <a href="#kontakt" class="btn btn--primary" id="calcCta">Chci tuto nabídku probrat</a>
+              <p class="fz-calc__disclaimer">Nezávazný orientační výpočet pro OSVČ i firmy. Konkrétní podmínky stanovíme po posouzení a podle zajištění.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -195,75 +189,69 @@
       </div>
     </section>
 
-    <!-- 7.3 KALKULAČKA -->
-    <section class="fz-section fz-section--surface" id="kalkulacka">
+    <!-- 7.4 RYCHLOST A FLEXIBILITA -->
+    <section class="fz-section">
       <div class="fz-section__inner">
-        <span class="fz-kicker">Kalkulačka</span>
-        <h2 class="fz-h2">Spočítejte si orientační splátku</h2>
-        <p class="fz-lead">Posuňte slider, nebo zadejte částku přesně. Výpočet je nezávazný — konkrétní podmínky stanovíme po posouzení a podle zajištění.</p>
-
-        <div class="fz-calc reveal">
-          <div class="fz-calc__controls">
-            <div>
-              <div class="fz-calc__group-label">
-                <label for="calcAmountInput">Výše úvěru</label>
-                <span><input type="text" id="calcAmountInput" class="fz-calc__value-input" value="300 000" inputmode="numeric" aria-label="Výše úvěru v korunách"><span class="fz-calc__unit">Kč</span></span>
-              </div>
-              <input type="range" class="fz-range" id="calcAmount" min="50000" max="1000000" step="10000" value="300000" aria-label="Výše úvěru" aria-valuetext="300 000 Kč" style="--fill:26%">
-              <div class="fz-range-scale"><span>50 000 Kč</span><span>1 000 000 Kč</span></div>
-            </div>
-            <div>
-              <div class="fz-calc__group-label">
-                <label for="calcTermInput">Délka splácení</label>
-                <span><input type="text" id="calcTermInput" class="fz-calc__value-input" value="36" inputmode="numeric" aria-label="Délka splácení v měsících"><span class="fz-calc__unit">měsíců</span></span>
-              </div>
-              <input type="range" class="fz-range" id="calcTerm" min="6" max="60" step="6" value="36" aria-label="Délka splácení v měsících" aria-valuetext="36 měsíců" style="--fill:55%">
-              <div class="fz-range-scale"><span>6 měsíců</span><span>60 měsíců</span></div>
-            </div>
-            <p class="fz-calc__more">Potřebujete víc? <strong>Až 5 000 000 Kč</strong> — <a href="#kontakt">ozvěte se</a>, částky nad 1 mil. Kč posuzujeme individuálně.</p>
+        <div class="fz-feature reveal">
+          <div>
+            <span class="fz-kicker">Rychlost a flexibilita</span>
+            <h2 class="fz-h2">Rychlý scoring a plán na míru do 48 hodin</h2>
+            <p class="fz-feature__text">Bleskově provedeme credit scoring a vyhodnotíme možnosti poskytnutí úvěru. Na základě vašich požadavků vám zdarma připravíme řešení na míru i plán splácení podle vašich možností, a to do 48 hodin.</p>
+            <a href="#kontakt" class="btn fz-feature__cta" data-open-offer>Chci scoring zdarma</a>
           </div>
-          <div class="fz-calc__result">
-            <span class="fz-calc__result-label">Orientační měsíční splátka</span>
-            <strong class="fz-calc__result-value" id="calcResult" aria-live="polite">&asymp;&nbsp;<em>9 667 Kč</em></strong>
-            <p class="fz-calc__params" id="calcParams">Úvěr 300 000 Kč · splatnost 36 měsíců · úrok od 9,9 % p.a.</p>
-            <a href="#kontakt" class="btn btn--primary" id="calcCta">Chci tuto nabídku probrat</a>
-            <a href="cena/" class="fz-calc__price-link">Jak se počítá cena a RPSN →</a>
-            <p class="fz-calc__disclaimer">Nezávazný orientační výpočet. Konkrétní podmínky stanovíme po posouzení a podle zajištění.</p>
+          <div class="fz-feature__stat" aria-hidden="true">
+            <strong>48 h</strong>
+            <span>scoring, řešení na míru i plán splácení</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 7.4 BENEFITY -->
-    <section class="fz-section">
+    <!-- 7.4b 8 DŮVODŮ -->
+    <section class="fz-section fz-section--surface">
       <div class="fz-section__inner">
-        <span class="fz-kicker">Proč Firemní záložna</span>
-        <h2 class="fz-h2">Banka vás posuzuje jako čísla. My jako podnikatele.</h2>
-        <div class="fz-cards">
-          <div class="fz-card reveal fz-card--accent">
-            <div class="fz-card__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/><circle cx="12" cy="11" r="1.5"/></svg></div>
-            <h3>Flexibilní zajištění</h3>
-            <p>Nemovitost — nebo i kombinace s movitým majetkem: auta, stroje, technologie. To vám běžná konkurence nenabídne.</p>
+        <span class="fz-kicker">8 důvodů</span>
+        <h2 class="fz-h2">Proč využít našich služeb pro české podnikatele</h2>
+        <div class="fz-reasons">
+          <div class="fz-reason reveal">
+            <span class="fz-reason__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 10v4M18 10v4"/></svg></span>
+            <h3>50 tisíc až 5 mil. Kč</h3>
+            <p>Půjčíme vám podle vašich plánů, potřeb a možností.</p>
           </div>
-          <div class="fz-card reveal">
-            <div class="fz-card__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
-            <h3>Rychlost</h3>
-            <p>Nezávazná nabídka do 24 hodin, peníze na účtu do 48 hodin od podpisu. Když potřebujete teď, ne za měsíc.</p>
+          <div class="fz-reason reveal">
+            <span class="fz-reason__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <h3>Do 24 hodin</h3>
+            <p>Individuální řešení jen pro vás dostanete zdarma za pouhý den.</p>
           </div>
-          <div class="fz-card reveal">
-            <div class="fz-card__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-            <h3>Osobní přístup</h3>
-            <p>Specialista se jménem a tváří, na kterého se dovoláte. Smlouvu vám přivezeme k podpisu domů nebo do firmy.</p>
+          <div class="fz-reason reveal">
+            <span class="fz-reason__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 15l2 2 4-4"/></svg></span>
+            <h3>Stačí IČO</h3>
+            <p>Doložíte jen, že skutečně podnikáte, například vystavenou fakturou.</p>
           </div>
-          <div class="fz-card reveal">
-            <div class="fz-card__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 15l2 2 4-4"/></svg></div>
-            <h3>Pohodlí</h3>
-            <p>Minimum papírů a žádné obíhání poboček. Vše vyřídíme po telefonu a osobně — výkazy a reporty nechte bance.</p>
+          <div class="fz-reason reveal">
+            <span class="fz-reason__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>
+            <h3>Peníze do 48 hodin</h3>
+            <p>Finanční pomoc na účtu můžete mít už za dva dny.</p>
           </div>
-          <div class="fz-card reveal">
-            <div class="fz-card__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
-            <h3>Rozumíme podnikání</h3>
-            <p>Sami podnikáme. Posuzujeme vaši situaci a majetek, ne jen bonitní historii — proto dokážeme říct ano i tam, kde banka mlčí.</p>
+          <div class="fz-reason reveal">
+            <span class="fz-reason__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <h3>Spoluručení</h3>
+            <p>Půjčujeme proti zástavě, ručit lze i cizím majetkem.</p>
+          </div>
+          <div class="fz-reason reveal">
+            <span class="fz-reason__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V8l7-4 7 4v13"/><path d="M9 21v-5h6v5"/></svg></span>
+            <h3>Bez bank</h3>
+            <p>Vaše poptávky zpracováváme rychleji a jednodušeji, bez zdlouhavé byrokracie.</p>
+          </div>
+          <div class="fz-reason reveal">
+            <span class="fz-reason__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.59 13.41 13.42 20.6a2 2 0 0 1-2.83 0L3 13V3h10l7.59 7.59a2 2 0 0 1 0 2.82z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg></span>
+            <h3>Bez skrytých poplatků</h3>
+            <p>Vše je od začátku pevně nastavené a uvedené ve smlouvě i v RPSN.</p>
+          </div>
+          <div class="fz-reason reveal">
+            <span class="fz-reason__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+            <h3>Osobní specialista</h3>
+            <p>Smlouvu přivezeme k podpisu k vám domů nebo do firmy.</p>
           </div>
         </div>
       </div>
@@ -274,24 +262,49 @@
       <div class="fz-section__inner">
         <span class="fz-kicker">Jak to probíhá</span>
         <h2 class="fz-h2">3 kroky k penězům</h2>
-        <div class="fz-steps">
-          <div class="fz-step reveal">
-            <span class="fz-step__num">1</span>
-            <h3>Ozvěte se<span class="fz-step__sound">(cink)</span></h3>
-            <p>Vyplníte krátký formulář, nebo rovnou zavoláte. Žádné rodné číslo, žádné výkazy — stačí jméno a kontakt.</p>
+        <div class="fz-stepper reveal">
+          <div class="fz-stepper__step">
+            <span class="fz-stepper__num">1</span>
+            <h3>Ozvěte se</h3>
+            <p>Vyplníte krátký formulář, nebo rovnou zavoláte. Žádné rodné číslo, žádné výkazy, stačí jméno a kontakt.</p>
           </div>
-          <div class="fz-step reveal">
-            <span class="fz-step__num">2</span>
-            <h3>Připravíme nabídku<span class="fz-step__sound">(vrrrm)</span></h3>
+          <div class="fz-stepper__step">
+            <span class="fz-stepper__num">2</span>
+            <h3>Připravíme nabídku</h3>
             <p>Specialista s vámi probere situaci, posoudí majetek a do 24 hodin máte nezávaznou nabídku na stole.</p>
           </div>
-          <div class="fz-step reveal">
-            <span class="fz-step__num">3</span>
-            <h3>Peníze jsou u vás<span class="fz-step__sound">(kešš)</span></h3>
+          <div class="fz-stepper__step">
+            <span class="fz-stepper__num">3</span>
+            <h3>Peníze jsou u vás</h3>
             <p>Smlouvu přivezeme k podpisu k vám domů či do firmy. Peníze odesíláme do 48 hodin.</p>
           </div>
         </div>
         <p style="margin-top:32px;"><a href="jak-to-funguje/" class="btn btn--ghost-dark">Celý proces krok za krokem</a></p>
+      </div>
+    </section>
+
+    <!-- 7.5b STAČÍ 3 VĚCI -->
+    <section class="fz-section">
+      <div class="fz-section__inner">
+        <span class="fz-kicker">Co od vás potřebujeme</span>
+        <h2 class="fz-h2">Stačí jen tyto 3 věci</h2>
+        <div class="fz-cards">
+          <div class="fz-card reveal">
+            <div class="fz-card__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+            <h3>Žadatel</h3>
+            <p>Vaše jméno a trvalá adresa. Vaše data budou v bezpečí a použijeme je jen pro účel získání půjčky.</p>
+          </div>
+          <div class="fz-card reveal">
+            <div class="fz-card__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg></div>
+            <h3>Faktura</h3>
+            <p>Jakýkoliv doklad o vašem podnikání. Najdeme řešení i pro ty, kteří nebyli minulý rok v zisku.</p>
+          </div>
+          <div class="fz-card reveal">
+            <div class="fz-card__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></div>
+            <h3>Foto</h3>
+            <p>Fotka nemovitosti, která zajistí váš úvěr. Ručit můžete i cizí nemovitostí se souhlasem majitele.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -321,6 +334,27 @@
           </div>
         </div>
         <p style="margin-top:32px;"><a href="pro-koho/" class="btn btn--ghost-dark">Více o tom, komu pomáháme</a></p>
+      </div>
+    </section>
+
+    <!-- 7.6b MOŽNOSTI ZAJIŠTĚNÍ -->
+    <section class="fz-section fz-section--surface">
+      <div class="fz-section__inner">
+        <span class="fz-kicker">Možnosti zajištění</span>
+        <h2 class="fz-h2">Čím můžete úvěr zajistit</h2>
+        <div class="fz-cards fz-cards--2">
+          <div class="fz-card reveal">
+            <div class="fz-card__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></div>
+            <h3>Nemovitostí</h3>
+            <p>Dům, byt, provozovna nebo pozemek. Stačí i souhlas jiného majitele.</p>
+          </div>
+          <div class="fz-card reveal">
+            <div class="fz-card__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg></div>
+            <h3>Kombinací</h3>
+            <p>K nemovitosti lze přidat i stroje, dopravní techniku nebo výrobní prostředky.</p>
+          </div>
+        </div>
+        <p style="margin-top:32px;"><a href="zajisteni/" class="btn btn--ghost-dark">Více o zajištění</a></p>
       </div>
     </section>
 
@@ -390,7 +424,6 @@
               <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Poplatky</strong> — sjednané předem, uvedené ve smlouvě i v RPSN</span></li>
               <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Doba splácení</strong> — kratší úvěr znamená nižší celkové náklady</span></li>
             </ul>
-            <p style="margin-top:20px;"><a href="cena/" class="btn btn--ghost-dark">Detailní rozpad ceny</a></p>
           </div>
           <div class="fz-price-example">
             <h3>Reprezentativní příklad</h3>
@@ -398,7 +431,7 @@
               <dt>Výše úvěru</dt><dd>300 000 Kč</dd>
               <dt>Splatnost</dt><dd>24 měsíců</dd>
               <dt>Úrok</dt><dd>9,9 % p.a.</dd>
-              <dt>Orientační měsíční splátka</dt><dd>≈ 13 830 Kč</dd>
+              <dt>Orientační měsíční splátka</dt><dd>13 830 Kč</dd>
               <dt>Celkem zaplatíte</dt><dd class="fz-todo">[doplnit] Kč</dd>
               <dt>RPSN</dt><dd class="fz-todo">[doplnit] %</dd>
             </dl>
@@ -432,11 +465,11 @@
           </details>
           <details>
             <summary>Mohu úvěr splatit předčasně? Jsou s tím spojené poplatky?<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
-            <p class="fz-faq__answer">Ano, předčasné splacení je možné. Podmínky sjednáme přímo ve smlouvě a specialista vám je vysvětlí předem — žádná drobná písmenka. Detaily najdete na stránce <a href="cena/">Cena</a>.</p>
+            <p class="fz-faq__answer">Ano, předčasné splacení je možné. Podmínky sjednáme přímo ve smlouvě a specialista vám je vysvětlí předem, žádná drobná písmenka.</p>
           </details>
           <details>
             <summary>Kolik mě úvěr bude stát / jaká je RPSN?<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
-            <p class="fz-faq__answer">Úrok začíná na 9,9 % p.a. Konkrétní sazba a poplatky závisí na posouzení a zajištění — vše dostanete předem v nezávazné nabídce včetně RPSN. <a href="cena/">Jak se počítá cena →</a></p>
+            <p class="fz-faq__answer">Úrok začíná na 9,9 % p.a. Konkrétní sazba a poplatky závisí na posouzení a zajištění. Vše dostanete předem v nezávazné nabídce včetně RPSN.</p>
           </details>
         </div>
         <p style="margin-top:32px;"><a href="caste-dotazy/" class="btn btn--ghost-dark">Všechny časté dotazy</a></p>
@@ -528,10 +561,9 @@
         <div class="footer__nav-group">
           <div class="footer__nav-heading">Navigace</div>
           <ul class="footer__nav-list">
-              <li><a href="jak-to-funguje/">Jak to funguje</a></li>
+              <li><a href="jak-to-funguje/">Podnikatelská půjčka</a></li>
               <li><a href="pro-koho/">Pro koho</a></li>
               <li><a href="zajisteni/">Zajištění</a></li>
-              <li><a href="cena/">Cena</a></li>
               <li><a href="caste-dotazy/">Časté dotazy</a></li>
               <li><a href="o-nas/">O nás</a></li>
               <li><a href="kontakt/">Kontakt</a></li>

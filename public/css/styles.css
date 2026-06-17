@@ -694,7 +694,7 @@ summary:focus-visible,
 /* ===== NUMBERS (počítadla) ===== */
 .fz-numbers {
   background: var(--brand-darker);
-  padding: 0px var(--px);
+  padding: clamp(40px, 5vw, 56px) var(--px);
 }
 
 .fz-numbers__inner {
@@ -974,6 +974,46 @@ input[type="range"].fz-range::-moz-range-thumb {
   }
 }
 
+/* ===== CALCULATOR IN HERO ===== */
+.fz-hero__calc {
+  min-width: 0;
+}
+
+.fz-calc--hero {
+  margin-top: 0;
+  grid-template-columns: 1fr;
+  background: var(--bg-white);
+}
+
+.fz-calc--hero .fz-calc__controls {
+  gap: 28px;
+  padding: clamp(24px, 3vw, 36px);
+}
+
+.fz-calc__head {
+  font-family: var(--f-head);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.fz-calc--hero .fz-calc__result {
+  border-left: 0;
+  border-top: 1px solid rgba(28, 34, 40, .07);
+  padding: clamp(24px, 3vw, 36px);
+  gap: 14px;
+}
+
+.fz-calc--hero .fz-calc__result-value {
+  font-size: clamp(38px, 4vw, 50px);
+}
+
+.fz-calc--hero .fz-calc__result .btn {
+  align-self: stretch;
+  text-align: center;
+}
+
 /* ===== BENEFIT CARDS ===== */
 .fz-cards {
   margin-top: 56px;
@@ -1050,6 +1090,173 @@ input[type="range"].fz-range::-moz-range-thumb {
 
 @media (max-width: 640px) {
   .fz-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== CARDS — 2 sloupce (zajištění) ===== */
+.fz-cards--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 640px) {
+  .fz-cards--2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== FEATURE BANNER (rychlost a flexibilita) ===== */
+.fz-feature {
+  background: var(--fz-grad);
+  color: #fff;
+  border-radius: 14px;
+  padding: clamp(32px, 4vw, 56px);
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: center;
+}
+
+.fz-feature .fz-kicker {
+  color: rgba(255, 255, 255, .85);
+}
+
+.fz-feature .fz-h2 {
+  color: #fff;
+  max-width: 620px;
+}
+
+.fz-feature__text {
+  margin-top: 18px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, .92);
+  max-width: 620px;
+}
+
+.fz-feature__cta {
+  margin-top: 28px;
+  background: #fff;
+  color: var(--fz-accent-dark);
+}
+
+.fz-feature__cta:hover {
+  opacity: .9;
+  transform: translateY(-1px);
+}
+
+.fz-feature__stat {
+  text-align: center;
+  border-left: 1px solid rgba(255, 255, 255, .25);
+  padding-left: 40px;
+}
+
+.fz-feature__stat strong {
+  display: block;
+  font-family: var(--f-head);
+  font-size: clamp(56px, 7vw, 88px);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.fz-feature__stat span {
+  display: block;
+  margin-top: 12px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, .85);
+}
+
+@media (max-width: 768px) {
+  .fz-feature {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .fz-feature__stat {
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, .25);
+    padding-left: 0;
+    padding-top: 28px;
+    text-align: left;
+  }
+}
+
+/* ===== REASONS (8 důvodů) ===== */
+.fz-reasons {
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.fz-reason {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-white);
+  border: 1px solid rgba(28, 34, 40, .08);
+  border-radius: 10px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.fz-reason:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(21, 16, 31, .1);
+}
+
+/* ikona jako jemný vodoznak v pozadí karty (inspirace produkty comfortmoney) */
+.fz-reason__icon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 0;
+  color: var(--fz-accent-dark);
+  opacity: .08;
+  pointer-events: none;
+}
+
+.fz-reason__icon svg {
+  width: 76px;
+  height: 76px;
+  stroke: currentColor;
+  stroke-width: 1.25;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.fz-reason h3 {
+  position: relative;
+  z-index: 1;
+  font-family: var(--f-head);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -.2px;
+  color: var(--text-dark);
+}
+
+.fz-reason p {
+  position: relative;
+  z-index: 1;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--text-body);
+  padding-right: 28px;
+}
+
+@media (max-width: 1024px) {
+  .fz-reasons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .fz-reasons {
     grid-template-columns: 1fr;
   }
 }
@@ -1655,6 +1862,43 @@ input[type="range"].fz-range::-moz-range-thumb {
   max-width: 640px;
 }
 
+/* Page hero s lead formulářem (text vlevo, formulář vpravo) */
+.fz-pagehero--form {
+  padding-bottom: 72px;
+}
+
+.fz-pagehero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+  gap: 64px;
+  align-items: center;
+}
+
+.fz-pagehero--form .footer__field label,
+.fz-pagehero--form .footer__field input,
+.fz-pagehero--form .footer__field textarea {
+  color: var(--text-dark);
+}
+
+.fz-pagehero--form .footer__gdpr label {
+  color: var(--text-body);
+}
+
+.fz-pagehero--form .footer__submit {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 17px;
+}
+
+@media (max-width: 1024px) {
+  .fz-pagehero__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
 .fz-prose {
   max-width: 760px;
 }
@@ -1746,6 +1990,97 @@ input[type="range"].fz-range::-moz-range-thumb {
 
 .fz-timeline__item p {
   margin-bottom: 0;
+}
+
+/* ===== STEPPER — vodorovná timeline (jako comfortmoney) ===== */
+.fz-stepper {
+  position: relative;
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* vodorovná spojnice přes středy koleček */
+.fz-stepper::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 16.66%;
+  right: 16.66%;
+  height: 2px;
+  background: rgba(139, 53, 221, .25);
+  z-index: 0;
+}
+
+.fz-stepper__step {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.fz-stepper__num {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--fz-grad);
+  color: #fff;
+  font-family: var(--f-head);
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  box-shadow: 0 0 0 7px var(--brand-surface);
+}
+
+.fz-stepper__step h3 {
+  font-family: var(--f-head);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -.2px;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.fz-stepper__step p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-body);
+  max-width: 320px;
+}
+
+@media (max-width: 768px) {
+  .fz-stepper {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    max-width: 460px;
+  }
+
+  .fz-stepper::before {
+    display: none;
+  }
+
+  .fz-stepper__step {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    gap: 18px;
+  }
+
+  .fz-stepper__num {
+    flex-shrink: 0;
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+
+  .fz-stepper__step p {
+    max-width: none;
+  }
 }
 
 /* CTA band */

@@ -217,6 +217,16 @@
     };
   })();
 
+  /* Konverzní CTA (mimo kalkulačku) → otevřou lead formulář v modalu */
+  if (window.fzFormModal) {
+    document.addEventListener('click', function (e) {
+      var trigger = e.target.closest('[data-open-offer]');
+      if (!trigger) return;
+      e.preventDefault();
+      window.fzFormModal.open();
+    });
+  }
+
   /* Modal „Zavoláme vám zpátky" — rychlé zadání telefonu */
   window.fzCallModal = (function () {
     var phoneRe = /^(\+?420)?\s?\d{3}\s?\d{3}\s?\d{3}$/;

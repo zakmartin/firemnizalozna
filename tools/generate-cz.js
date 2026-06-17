@@ -17,62 +17,52 @@ const pages = [];
 /* ---------- /jak-to-funguje/ ---------- */
 pages.push({
   lang: 'cs', path: '/jak-to-funguje/', altPath: '/en/how-it-works/',
-  title: 'Jak to funguje — Firemní záložna',
-  desc: 'Od prvního zavolání k penězům na účtu do 48 hodin. Tři kroky, minimum dokumentů, smlouvu přivezeme k podpisu. Podnikatelský úvěr bez bankovní byrokracie.',
-  kicker: 'Jak to funguje',
-  h1: 'Tři kroky <em>k penězům</em>',
+  title: 'Podnikatelská půjčka do 48 hodin — Firemní záložna',
+  desc: 'Podnikatelská půjčka pro OSVČ i firmy. Od prvního zavolání k penězům na účtu do 48 hodin, ve třech krocích, s minimem dokumentů a bez bankovní byrokracie.',
+  kicker: 'Podnikatelská půjčka',
+  h1: 'Podnikatelská půjčka <em>krok za krokem</em>',
   sub: 'Tři kroky, minimum dokumentů a jasná časová osa. Od prvního kontaktu k penězům na účtu to trvá zpravidla dva pracovní dny.',
-  content: `        <div class="fz-prose">
-          <h2>Krok 1 — Ozvěte se <em style="color:var(--fz-accent-dark);font-style:italic;font-size:.7em;">(cink)</em></h2>
-          <p>Vyplníte krátký formulář, nebo rovnou zavoláte na <a href="tel:+420771528747"><strong>771 528 747</strong></a>. V prvním kroku po vás chceme jen <strong>jméno a kontakt</strong> — žádné rodné číslo, žádné výkazy, žádné přílohy. Specialista Aleš Mráz se vám ozve zpátky, proberete situaci a co potřebujete financovat.</p>
+  heroForm: true,
+  content: `        <span class="fz-kicker">Jak to probíhá</span>
+        <h2 class="fz-h2">Tři kroky k penězům</h2>
+        <div class="fz-stepper reveal">
+          <div class="fz-stepper__step">
+            <span class="fz-stepper__num">1</span>
+            <h3>Ozvěte se</h3>
+            <p>Vyplníte krátký formulář, nebo zavoláte na 771 528 747. Chceme jen jméno a kontakt, žádné rodné číslo ani výkazy.</p>
+          </div>
+          <div class="fz-stepper__step">
+            <span class="fz-stepper__num">2</span>
+            <h3>Připravíme nabídku</h3>
+            <p>Specialista posoudí váš majetek a do 24 hodin máte na stole nezávaznou nabídku se všemi čísly.</p>
+          </div>
+          <div class="fz-stepper__step">
+            <span class="fz-stepper__num">3</span>
+            <h3>Peníze jsou u vás</h3>
+            <p>Smlouvu přivezeme k podpisu k vám domů či do firmy. Po podpisu máte peníze na účtu do 48 hodin.</p>
+          </div>
+        </div>
 
-          <h2>Krok 2 — Připravíme nabídku <em style="color:var(--fz-accent-dark);font-style:italic;font-size:.7em;">(vrrrm)</em></h2>
-          <p>Specialista posoudí váš majetek — nemovitost, případně kombinaci s movitým majetkem — a <strong>do 24 hodin</strong> máte na stole nezávaznou nabídku. V ní najdete:</p>
+        <div class="fz-prose" style="margin-top:64px;">
+          <h2>Co najdete v nezávazné nabídce</h2>
           <ul>
             <li>výši úvěru a úrokovou sazbu (od 9,9 % p.a.),</li>
             <li>orientační měsíční splátku a délku splácení,</li>
-            <li>všechny poplatky a RPSN — žádné položky schované v drobném písmu,</li>
+            <li>všechny poplatky a RPSN, žádné položky schované v drobném písmu,</li>
             <li>podmínky předčasného splacení.</li>
           </ul>
           <p>Nabídka vás k ničemu nezavazuje. Když se rozhodnete jinak, nic se neděje.</p>
 
-          <h2>Krok 3 — Peníze jsou u vás <em style="color:var(--fz-accent-dark);font-style:italic;font-size:.7em;">(kešš)</em></h2>
-          <p>Když nabídka sedí, <strong>přivezeme smlouvu k podpisu</strong> — k vám domů, do dílny nebo do firmy, jak vám to vyhovuje. Po podpisu odesíláme peníze, na účtu je máte zpravidla <strong>do 48 hodin</strong>.</p>
-
           <h2>Jaké dokumenty budete potřebovat</h2>
           <ul>
-            <li><strong>Občanský průkaz</strong> — ověření totožnosti.</li>
-            <li><strong>IČO</strong> — úvěr poskytujeme podnikatelům a firmám na podnikatelské účely.</li>
-            <li><strong>Doklady k zástavě</strong> — u nemovitosti stačí adresa či list vlastnictví (zbytek si dohledáme v katastru), u vozidel a strojů technický průkaz nebo doklad o vlastnictví.</li>
+            <li><strong>Občanský průkaz</strong> pro ověření totožnosti.</li>
+            <li><strong>IČO</strong>, úvěr poskytujeme podnikatelům a firmám na podnikatelské účely.</li>
+            <li><strong>Doklady k zástavě</strong>: u nemovitosti stačí adresa či list vlastnictví (zbytek si dohledáme v katastru), u vozidel a strojů technický průkaz nebo doklad o vlastnictví.</li>
           </ul>
-          <p>Výkazy, daňová přiznání ani reporty po vás v prvním kroku nechceme. Úvěr je zajištěn majetkem — proto se obejdeme bez bankovního papírování.</p>
-
-          <h2>Časová osa — kdy se co děje</h2>
-          <div class="fz-timeline">
-            <div class="fz-timeline__item">
-              <span class="fz-timeline__when">Den 0</span>
-              <h3>Ozvete se</h3>
-              <p>Formulář nebo telefon. Specialista vám zavolá zpátky a probere s vámi situaci.</p>
-            </div>
-            <div class="fz-timeline__item">
-              <span class="fz-timeline__when">Do 24 hodin</span>
-              <h3>Máte nezávaznou nabídku</h3>
-              <p>Konkrétní čísla: výše, splátka, poplatky, RPSN. Vše na rovinu.</p>
-            </div>
-            <div class="fz-timeline__item">
-              <span class="fz-timeline__when">Po odsouhlasení</span>
-              <h3>Podpis u vás</h3>
-              <p>Specialista přiveze smlouvu, projde ji s vámi bod po bodu a podepíšete.</p>
-            </div>
-            <div class="fz-timeline__item">
-              <span class="fz-timeline__when">Do 48 hodin</span>
-              <h3>Peníze na účtu</h3>
-              <p>Odesíláme ihned po podpisu a zápisu zástavy. Můžete platit materiál, mzdy, stroje.</p>
-            </div>
-          </div>
+          <p>Výkazy, daňová přiznání ani reporty po vás v prvním kroku nechceme. Úvěr je zajištěn majetkem, proto se obejdeme bez bankovního papírování.</p>
 
           <h2>Co znamená „smlouvu přivezeme"?</h2>
-          <p>Přesně to, co říkáme. Žádný anonymní online proces ani fronta na pobočce — <strong>specialista za vámi přijede osobně</strong>, smlouvu s vámi projde lidskou řečí, zodpoví všechny otázky a podepíšete na místě. Vy se můžete dál věnovat podnikání.</p>
+          <p>Přesně to, co říkáme. Žádný anonymní online proces ani fronta na pobočce. <strong>Specialista za vámi přijede osobně</strong>, smlouvu s vámi projde lidskou řečí, zodpoví všechny otázky a podepíšete na místě. Vy se můžete dál věnovat podnikání.</p>
         </div>`,
 });
 
@@ -202,46 +192,6 @@ pages.push({
         </div>`,
 });
 
-/* ---------- /cena/ ---------- */
-pages.push({
-  lang: 'cs', path: '/cena/', altPath: '/en/pricing/',
-  title: 'Kolik to stojí — cena a RPSN — Firemní záložna',
-  desc: 'Transparentní cena podnikatelského úvěru: úrok od 9,9 % p.a., poplatky sjednané předem, reprezentativní příklad s RPSN. Předčasné splacení možné.',
-  kicker: 'Transparentní cena',
-  h1: 'Kolik to <em>stojí</em>',
-  sub: 'Cena úvěru na rovinu: úrok od 9,9 % p.a., poplatky sjednané předem a uvedené v RPSN. Žádná překvapení ve smlouvě.',
-  content: `        <div class="fz-prose">
-          <h2>Z čeho se cena skládá</h2>
-          <ul>
-            <li><strong>Úrok od 9,9 % p.a.</strong> — konkrétní sazba závisí na posouzení, výši úvěru a kvalitě zajištění. Sazbu znáte z nezávazné nabídky dřív, než se k čemukoli zavážete.</li>
-            <li><strong>Poplatky</strong> — sjednané předem a uvedené ve smlouvě i v RPSN. <span style="color:var(--fz-accent-dark);">[DOPLNIT: sazebník poplatků — po finalizaci s byznysem a právní revizi]</span></li>
-            <li><strong>Doba splácení</strong> — 6 až 60 měsíců. Kratší úvěr znamená nižší celkové náklady, delší zase nižší měsíční splátku.</li>
-          </ul>
-
-          <h2>Reprezentativní příklad</h2>
-          <div class="fz-price-example" style="max-width:480px;">
-            <dl>
-              <dt>Výše úvěru</dt><dd>300 000 Kč</dd>
-              <dt>Splatnost</dt><dd>24 měsíců</dd>
-              <dt>Úroková sazba</dt><dd>9,9 % p.a.</dd>
-              <dt>Orientační měsíční splátka</dt><dd>≈ 13 830 Kč</dd>
-              <dt>Jednorázové poplatky</dt><dd class="fz-todo">[doplnit] Kč</dd>
-              <dt>Celkem zaplatíte</dt><dd class="fz-todo">[doplnit] Kč</dd>
-              <dt>RPSN</dt><dd class="fz-todo">[doplnit] %</dd>
-            </dl>
-            <p class="fz-fineprint">Příklad je orientační. Konkrétní podmínky stanovíme po individuálním posouzení a podle zajištění. RPSN a celkovou částku doplníme po finalizaci sazebníku poplatků a právní revizi.</p>
-          </div>
-
-          <h2>Předčasné splacení</h2>
-          <p>Úvěr můžete splatit předčasně — třeba ve chvíli, kdy vám odběratel proplatí zakázku. Podmínky předčasného splacení sjednáme přímo ve smlouvě a specialista vám je vysvětlí <strong>před podpisem</strong>, ne po něm.</p>
-
-          <h2>Proč nejsme nejlevnější — a proč to klientům dává smysl</h2>
-          <p>Najdete poskytovatele s nižší sazbou. My nesoutěžíme cenou, ale tím, co podnikatel v tísni potřebuje nejvíc: <strong>nabídka do 24 hodin, peníze do 48 hodin, individuální posouzení a zástava i movitým majetkem.</strong> Když zakázka nebo sezóna nepočká, je rychlost levnější než ušlá příležitost.</p>
-
-          <p class="fz-fineprint">Úvěry poskytujeme výhradně podnikatelům a firmám na podnikatelské účely. Nejedná se o spotřebitelský úvěr ve smyslu zák. č. 257/2016 Sb.</p>
-        </div>`,
-});
-
 /* ---------- /caste-dotazy/ ---------- */
 const FAQ_ITEMS = [
   ['Jak rychle dostanu peníze?',
@@ -253,7 +203,7 @@ const FAQ_ITEMS = [
   ['Musím dokládat příjmy nebo výkazy?',
    'Jen minimum. Úvěr je zajištěn majetkem, proto nepotřebujeme detailní výkazy ani dlouhou bonitní historii. Co přesně budeme potřebovat, vám řekne specialista hned v prvním hovoru.'],
   ['Kolik mě úvěr bude stát / jaká je RPSN?',
-   'Úrok začíná na 9,9 % p.a. Konkrétní sazba a poplatky závisí na posouzení a zajištění — vše dostanete předem v nezávazné nabídce včetně RPSN. Více na stránce <a href="/cena/">Cena</a>.'],
+   'Úrok začíná na 9,9 % p.a. Konkrétní sazba a poplatky závisí na posouzení a zajištění. Vše dostanete předem v nezávazné nabídce včetně RPSN.'],
   ['Mohu úvěr splatit předčasně? Jsou s tím spojené poplatky?',
    'Ano, předčasné splacení je možné. Podmínky sjednáme přímo ve smlouvě a specialista vám je vysvětlí před podpisem — žádná drobná písmenka.'],
   ['Jakou výši úvěru mohu získat?',
@@ -291,26 +241,31 @@ ${FAQ_ITEMS.map(([q, a]) => faq(q, a)).join('\n')}
 pages.push({
   lang: 'cs', path: '/o-nas/', altPath: '/en/about/',
   title: 'O nás — Firemní záložna',
-  desc: 'Sami podnikáme a rozumíme vašim potřebám. Firemní záložna je značka investiční skupiny CFG pro rychlé podnikatelské financování.',
+  desc: 'Přes 9 let na trhu s úvěry a investicemi a více než 265 mil. Kč půjčeno podnikatelům. Firemní záložna je značka investiční skupiny CFG.',
   kicker: 'O nás',
-  h1: 'Sami podnikáme. <em>Proto vám rozumíme.</em>',
-  sub: 'Firemní záložna je značka investiční skupiny CFG pro rychlé podnikatelské financování. Víme, jaké to je, když cashflow nepočká.',
+  h1: 'S námi to <em>má smysl</em>',
+  sub: 'Budujeme pevné vztahy s podnikateli, kterým banky nevěří, a pro každou situaci hledáme řešení, které dává smysl.',
   content: `        <div class="fz-prose">
           <h2>Kdo jsme</h2>
-          <p>Nejsme banka a nechceme jí být. Jsme podnikatelé, kteří financují jiné podnikatele. Víme, že zakázka nepočká na bankovní kolečko, že sezóna se neptá na scoring a že nejcennější, co podnikatel má, je čas. Proto děláme věci jinak: <strong>nabídka do 24 hodin, peníze do 48 hodin, smlouva dovezená k podpisu.</strong></p>
+          <p>Nejsme banka a nechceme jí být. Jsme podnikatelé, kteří financují jiné podnikatele, a budujeme pevné vztahy s lidmi, kterým banky nevěří. Víme, že zakázka nepočká na bankovní kolečko a že nejcennější, co podnikatel má, je čas. Proto děláme věci jinak: <strong>nabídka do 24 hodin, peníze do 48 hodin a smlouva dovezená k podpisu.</strong></p>
 
-          <h2>Jak posuzujeme</h2>
-          <p>Banka vás vidí jako řádky ve výkazu. My se ptáme: co děláte, co potřebujete financovat a jaký máte majetek. Individuální posouzení znamená, že dokážeme říct „ano" i tam, kde automatický scoring řekl „ne" — protože vidíme celý příběh, ne jen čísla.</p>
+          <h2>Přes 9 let zkušeností</h2>
+          <p>Na trhu s úvěry a investicemi působíme <strong>více než 9 let</strong> a za tu dobu jsme podnikatelům půjčili <strong>přes 265 milionů Kč</strong>. Podnikatelské úvěry poskytujeme od 50 000 do 1 000 000 Kč, po individuálním posouzení až do 5 milionů Kč.</p>
 
-          <h2>Váš specialista</h2>
-          <p>U nás nemluvíte s call centrem. Váš úvěr od prvního telefonátu po podpis vede <strong>Aleš Mráz, úvěrový specialista</strong> — ozve se vám osobně, posoudí majetek, připraví nabídku a přiveze smlouvu. Jedna tvář, jedno jméno, jedno číslo: <a href="tel:+420771528747">771 528 747</a>.</p>
+          <h2>Naše hodnoty</h2>
+          <p>Jednáme férově a bez skrytých podmínek, řídíme se etickým kodexem a stavíme na čtyřech hodnotách:</p>
+          <ul>
+            <li><strong>Profesionalita</strong>: víme, co děláme, a za výsledkem si stojíme.</li>
+            <li><strong>Bezpečí</strong>: vaše data i váš majetek jsou u nás v bezpečí.</li>
+            <li><strong>Lidský přístup</strong>: jednáme s vámi jako s partnerem, ne jako s číslem.</li>
+            <li><strong>Transparentnost</strong>: podmínky i poplatky znáte předem, žádné drobné písmo.</li>
+          </ul>
+
+          <h2>Kdo vás povede</h2>
+          <p>U nás nemluvíte s call centrem. Za firmou stojí <strong>Ing. Petr Cimala</strong>, jednatel, a o vaši poptávku se osobně postará <strong>Aleš Mráz</strong>, úvěrový specialista, který se vám ozve, posoudí majetek, připraví nabídku a přiveze smlouvu k podpisu. Jedno číslo: <a href="tel:+420771528747">771 528 747</a>.</p>
 
           <h2>Zázemí skupiny CFG</h2>
-          <p>Za Firemní záložnou stojí česká investiční skupina <a href="https://www.cfg.cz" target="_blank" rel="noopener">CFG</a>, která se dlouhodobě věnuje financování, pohledávkám a nemovitostem. Pro vás to znamená stabilitu a jistotu, že jednáte s partnerem se silným zázemím — který tu bude i za pět let.</p>
-          <p><span style="color:var(--fz-accent-dark);">[DOPLNIT: jednotná sada čísel skupiny — objem poskytnutých úvěrů, roky na trhu, počet klientů]</span></p>
-
-          <h2>Spolu to dáme</h2>
-          <p>Tahle věta není marketingový slogan — je to způsob, jak pracujeme. Vy podnikáte, my financujeme. A když se domluvíme, jedeme spolu, dokud nemáte splaceno a hotovo.</p>
+          <p>Za Firemní záložnou stojí česká investiční skupina <a href="https://www.cfg.cz" target="_blank" rel="noopener">CFG</a>, která se dlouhodobě věnuje financování, pohledávkám a nemovitostem. Pro vás to znamená stabilitu a jistotu, že jednáte s partnerem se silným zázemím.</p>
         </div>`,
 });
 

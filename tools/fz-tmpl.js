@@ -8,10 +8,10 @@ const EN_ENABLED = false;
 
 const NAV = {
   cs: [
-    ['/jak-to-funguje/', 'Jak to funguje'],
+    ['/jak-to-funguje/', 'Podnikatelská půjčka'],
     ['/pro-koho/', 'Pro koho'],
     ['/zajisteni/', 'Zajištění'],
-    ['/cena/', 'Cena'],
+    ['/o-nas/', 'O nás'],
     ['/caste-dotazy/', 'FAQ'],
     ['/kontakt/', 'Kontakt'],
   ],
@@ -50,8 +50,8 @@ const T = {
     legalCookieSettings: 'Nastavení cookies',
     copy: '© 2026 Firemní záložna',
     footNav: [
-      ['/jak-to-funguje/', 'Jak to funguje'], ['/pro-koho/', 'Pro koho'], ['/zajisteni/', 'Zajištění'],
-      ['/cena/', 'Cena'], ['/caste-dotazy/', 'Časté dotazy'], ['/o-nas/', 'O nás'], ['/kontakt/', 'Kontakt'],
+      ['/jak-to-funguje/', 'Podnikatelská půjčka'], ['/pro-koho/', 'Pro koho'], ['/zajisteni/', 'Zajištění'],
+      ['/caste-dotazy/', 'Časté dotazy'], ['/o-nas/', 'O nás'], ['/kontakt/', 'Kontakt'],
     ],
     sticky: 'Zavolejte mi — 771 528 747',
     ckTitle: 'Cookies na tomto webu',
@@ -135,7 +135,7 @@ function nav(lang, altPath) {
       </button>
       <nav class="nav__links" id="navLinks" aria-label="Navigace">
 ${links}
-        <a href="${t.ctaHref}" class="nav__item nav__cta">${t.cta}</a>
+        <a href="${t.ctaHref}" class="nav__item nav__cta" data-open-offer>${t.cta}</a>
 ${EN_ENABLED ? `        <a href="${altPath}" class="nav__lang" lang="${lang === 'en' ? 'cs' : 'en'}" hreflang="${lang === 'en' ? 'cs' : 'en'}">${t.lang}</a>\n` : ''}      </nav>
     </div>
   </header>`;
@@ -152,25 +152,10 @@ function ctaBand(lang) {
         </div>`;
 }
 
-/* Pre-footer kontaktní sekce s lead formulářem (inspirace: kicker + gradient titulek + specialista vlevo, formulář vpravo) */
-function preCta(lang) {
+/* Karta s lead formulářem — sdílená pre-footerem i hero sekcí (jediná instance formuláře na stránce) */
+function leadFormCard(lang) {
   const t = T[lang];
-  return `    <section class="fz-precta" id="kontakt">
-      <div class="fz-precta__inner">
-        <div>
-          <span class="fz-kicker">${t.pcKicker}</span>
-          <h2>${t.pcTitle}</h2>
-          <p class="fz-precta__text">${t.pcText}</p>
-          <div class="fz-precta__spec">
-            <img src="/assets/ales_mraz.webp" alt="${t.specName}, ${t.specRole.split(' — ')[0]}" width="56" height="56">
-            <div>
-              <div class="fz-precta__spec-label">${t.pcSpecLabel}</div>
-              <div class="fz-precta__spec-name">${t.specName}</div>
-              <a href="tel:+420771528747">${PHONE_ICON.replace('class="icon"', 'class="icon" style="width:14px;height:14px;vertical-align:-2px;margin-right:4px;"')}771 528 747</a>
-            </div>
-          </div>
-        </div>
-        <div class="fz-precta__form-card">
+  return `<div class="fz-precta__form-card">
           <h3 class="fz-precta__form-title">${t.formTitle}</h3>
           <form class="footer__form" id="leadForm" action="/api/lead" method="post" novalidate>
             <input type="hidden" name="calcContext" id="leadCalcContext" value="">
@@ -207,7 +192,28 @@ function preCta(lang) {
             <div class="form-status" id="leadStatus" role="status" aria-live="polite"></div>
             <button type="submit" class="footer__submit">${t.submit}</button>
           </form>
+        </div>`;
+}
+
+/* Pre-footer kontaktní sekce s lead formulářem (kicker + gradient titulek + specialista vlevo, formulář vpravo) */
+function preCta(lang) {
+  const t = T[lang];
+  return `    <section class="fz-precta" id="kontakt">
+      <div class="fz-precta__inner">
+        <div>
+          <span class="fz-kicker">${t.pcKicker}</span>
+          <h2>${t.pcTitle}</h2>
+          <p class="fz-precta__text">${t.pcText}</p>
+          <div class="fz-precta__spec">
+            <img src="/assets/ales_mraz.webp" alt="${t.specName}, ${t.specRole.split(' — ')[0]}" width="56" height="56">
+            <div>
+              <div class="fz-precta__spec-label">${t.pcSpecLabel}</div>
+              <div class="fz-precta__spec-name">${t.specName}</div>
+              <a href="tel:+420771528747">${PHONE_ICON.replace('class="icon"', 'class="icon" style="width:14px;height:14px;vertical-align:-2px;margin-right:4px;"')}771 528 747</a>
+            </div>
+          </div>
         </div>
+        ${leadFormCard(lang)}
       </div>
     </section>`;
 }
@@ -337,12 +343,14 @@ function page(p) {
 ${nav(p.lang, p.altPath)}
 
   <main id="main">
-    <section class="fz-pagehero">
-      <div class="fz-pagehero__inner">
-        <span class="fz-kicker">${p.kicker || h1Text}</span>
-        <h1>${p.h1}</h1>
-        <p class="fz-pagehero__sub">${p.sub}</p>
-      </div>
+    <section class="fz-pagehero${p.heroForm ? ' fz-pagehero--form' : ''}"${p.heroForm ? ' id="kontakt"' : ''}>
+      <div class="fz-pagehero__inner${p.heroForm ? ' fz-pagehero__grid' : ''}">
+        <div class="fz-pagehero__copy">
+          <span class="fz-kicker">${p.kicker || h1Text}</span>
+          <h1>${p.h1}</h1>
+          <p class="fz-pagehero__sub">${p.sub}</p>
+        </div>
+${p.heroForm ? '        ' + leadFormCard(p.lang) + '\n' : ''}      </div>
     </section>
 
     <section class="fz-section">
@@ -351,7 +359,7 @@ ${p.content}
       </div>
     </section>
 
-${p.noForm ? '' : preCta(p.lang)}
+${(p.noForm || p.heroForm) ? '' : preCta(p.lang)}
 ${footer(p.lang)}
   </main>
 

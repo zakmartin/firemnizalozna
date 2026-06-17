@@ -84,7 +84,7 @@ async function deliverSmtp(lead) {
     auth: { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS },
   });
   const calcLine = lead.calculator && lead.calculator.amount
-    ? `\nKalkulačka: ${lead.calculator.amount.toLocaleString('cs-CZ')} Kč / ${lead.calculator.months} měs. / splátka ≈ ${lead.calculator.payment} Kč (úrok od ${lead.calculator.rate} %)`
+    ? `\nKalkulačka: ${lead.calculator.amount.toLocaleString('cs-CZ')} Kč / ${lead.calculator.months} měs. / splátka ${lead.calculator.payment} Kč (úrok od ${lead.calculator.rate} %)`
     : '';
   await transporter.sendMail({
     from: process.env.SMTP_FROM || process.env.SMTP_USER,

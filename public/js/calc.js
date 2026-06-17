@@ -45,7 +45,7 @@
       var months = +termRange.value;
       var pay = annuity(amount, months, RATE);
 
-      resultEl.innerHTML = '&asymp;&nbsp;<em>' + czk(pay) + '</em>';
+      resultEl.innerHTML = '<em>' + czk(pay) + '</em>';
       paramsEl.textContent = EN
         ? 'Loan ' + czk(amount) + ' · term ' + months + ' months · interest from ' + RATE.toLocaleString('en-GB') + '% p.a.'
         : 'Úvěr ' + czk(amount) + ' · splatnost ' + months + ' měsíců · úrok od ' + RATE.toLocaleString('cs-CZ') + ' % p.a.';
@@ -102,8 +102,8 @@
       // nepřepisovat, co si klient napsal sám
       if (note.value && note.dataset.autofilled !== '1') return;
       note.value = EN
-        ? 'I am interested in a loan of ' + czk(ctx.amount) + ' for ' + ctx.months + ' months (indicative instalment ≈ ' + czk(ctx.payment) + ').'
-        : 'Mám zájem o úvěr ' + czk(ctx.amount) + ' na ' + ctx.months + ' měsíců (orientační splátka ≈ ' + czk(ctx.payment) + ').';
+        ? 'I am interested in a loan of ' + czk(ctx.amount) + ' for ' + ctx.months + ' months (indicative instalment ' + czk(ctx.payment) + ').'
+        : 'Mám zájem o úvěr ' + czk(ctx.amount) + ' na ' + ctx.months + ' měsíců (orientační splátka ' + czk(ctx.payment) + ').';
       note.dataset.autofilled = '1';
     };
 

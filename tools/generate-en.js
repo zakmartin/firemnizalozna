@@ -164,7 +164,7 @@ pages.push({
               <dt>Loan amount</dt><dd>CZK 300,000</dd>
               <dt>Term</dt><dd>24 months</dd>
               <dt>Interest rate</dt><dd>9.9% p.a.</dd>
-              <dt>Indicative monthly instalment</dt><dd>≈ CZK 13,830</dd>
+              <dt>Indicative monthly instalment</dt><dd>CZK 13,830</dd>
               <dt>One-off fees</dt><dd class="fz-todo">[TBC] CZK</dd>
               <dt>Total payable</dt><dd class="fz-todo">[TBC] CZK</dd>
               <dt>APR</dt><dd class="fz-todo">[TBC] %</dd>
