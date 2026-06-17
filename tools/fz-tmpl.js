@@ -28,7 +28,7 @@ const NAV = {
 const T = {
   cs: {
     skip: 'Přeskočit na obsah',
-    cta: 'Zjistit nezávaznou nabídku', ctaHref: '/#kalkulacka',
+    cta: 'Zažádat o úvěr', ctaHref: '/#kalkulacka',
     lang: 'EN', menuOpen: 'Otevřít menu', member: 'Člen skupiny',
     home: 'Domů',
     claim: 'Spolu to dáme.',
