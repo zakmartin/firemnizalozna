@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Podnikatelská půjčka do 48 hodin — Firemní záložna</title>
-  <meta name="description" content="Podnikatelská půjčka pro OSVČ i firmy. Od prvního zavolání k penězům na účtu do 48 hodin, ve třech krocích, s minimem dokumentů a bez bankovní byrokracie.">
-  <link rel="canonical" href="https://www.firemnizalozna.cz/jak-to-funguje/">
+  <title>Ochrana oznamovatelů — Firemní záložna</title>
+  <meta name="description" content="Oznamování protiprávního jednání podle zákona č. 171/2023 Sb. ve společnosti Firemní záložna a.s. Jak a komu podat oznámení a jak chráníme oznamovatele.">
+  <link rel="canonical" href="https://www.firemnizalozna.cz/ochrana-oznamovatelu/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Podnikatelská půjčka do 48 hodin — Firemní záložna">
-  <meta property="og:description" content="Podnikatelská půjčka pro OSVČ i firmy. Od prvního zavolání k penězům na účtu do 48 hodin, ve třech krocích, s minimem dokumentů a bez bankovní byrokracie.">
-  <meta property="og:url" content="https://www.firemnizalozna.cz/jak-to-funguje/">
+  <meta property="og:title" content="Ochrana oznamovatelů — Firemní záložna">
+  <meta property="og:description" content="Oznamování protiprávního jednání podle zákona č. 171/2023 Sb. ve společnosti Firemní záložna a.s. Jak a komu podat oznámení a jak chráníme oznamovatele.">
+  <meta property="og:url" content="https://www.firemnizalozna.cz/ochrana-oznamovatelu/">
   <meta property="og:image" content="https://www.firemnizalozna.cz/assets/logo-fz.svg">
   <meta property="og:locale" content="cs_CZ">
   <meta name="twitter:card" content="summary">
@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="../css/cfg-base.css">
   <link rel="stylesheet" href="../css/brand.css">
   <link rel="stylesheet" href="../css/styles.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://www.firemnizalozna.cz/"},{"@type":"ListItem","position":2,"name":"Podnikatelská půjčka krok za krokem","item":"https://www.firemnizalozna.cz/jak-to-funguje/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Domů","item":"https://www.firemnizalozna.cz/"},{"@type":"ListItem","position":2,"name":"Oznamování protiprávního jednání","item":"https://www.firemnizalozna.cz/ochrana-oznamovatelu/"}]}</script>
 </head>
 <body>
   <a class="skip-link" href="#main">Přeskočit na obsah</a>
@@ -52,96 +52,42 @@
   </header>
 
   <main id="main">
-    <section class="fz-pagehero fz-pagehero--form" id="kontakt">
-      <div class="fz-pagehero__inner fz-pagehero__grid">
+    <section class="fz-pagehero">
+      <div class="fz-pagehero__inner">
         <div class="fz-pagehero__copy">
-          <span class="fz-kicker">Podnikatelská půjčka</span>
-          <h1>Podnikatelská půjčka <em>krok za krokem</em></h1>
-          <p class="fz-pagehero__sub">Tři kroky, minimum dokumentů a jasná časová osa. Od prvního kontaktu k penězům na účtu to trvá zpravidla dva pracovní dny.</p>
-        </div>
-        <div class="fz-precta__form-card">
-          <h3 class="fz-precta__form-title">Zjistěte nezávaznou nabídku</h3>
-          <form class="footer__form" id="leadForm" action="/api/lead" method="post" novalidate>
-            <input type="hidden" name="calcContext" id="leadCalcContext" value="">
-            <div class="hp-field" aria-hidden="true">
-              <label for="lead-company">Nevyplňujte toto pole</label>
-              <input type="text" id="lead-company" name="company" tabindex="-1" autocomplete="off">
-            </div>
-            <div class="footer__field">
-              <label for="lead-name">Jméno a příjmení *</label>
-              <input type="text" id="lead-name" name="name" autocomplete="name" placeholder="Jan Novák" required>
-              <span class="form-error" aria-live="polite"></span>
-            </div>
-            <div class="footer__form-row">
-              <div class="footer__field">
-                <label for="lead-phone">Telefon</label>
-                <input type="tel" id="lead-phone" name="phone" inputmode="tel" autocomplete="tel" placeholder="777 123 456">
-                <span class="form-error" aria-live="polite"></span>
-              </div>
-              <div class="footer__field">
-                <label for="lead-email">E-mail</label>
-                <input type="email" id="lead-email" name="email" inputmode="email" autocomplete="email" placeholder="jan@firma.cz">
-                <span class="form-error" aria-live="polite"></span>
-              </div>
-            </div>
-            <div class="footer__field">
-              <label for="lead-message">Poznámka (nepovinné)</label>
-              <textarea id="lead-message" name="message" rows="3" placeholder="Např. mám zájem o úvěr 300 000 Kč na 36 měsíců…"></textarea>
-            </div>
-            <div class="footer__gdpr">
-              <input type="checkbox" id="lead-gdpr" name="gdpr" value="1" required>
-              <label for="lead-gdpr">Souhlasím se <a href="../ochrana-osobnich-udaju/" style="text-decoration:underline;">zpracováním osobních údajů</a> *</label>
-              <span class="form-error" aria-live="polite"></span>
-            </div>
-            <div class="form-status" id="leadStatus" role="status" aria-live="polite"></div>
-            <button type="submit" class="footer__submit">Zjistit nezávaznou nabídku</button>
-          </form>
+          <span class="fz-kicker">Právní informace</span>
+          <h1>Oznamování protiprávního jednání</h1>
+          <p class="fz-pagehero__sub">Firemní záložna a.s. přijímá oznámení podle zákona č. 171/2023 Sb., o ochraně oznamovatelů.</p>
         </div>
       </div>
     </section>
 
     <section class="fz-section">
       <div class="fz-section__inner">
-        <span class="fz-kicker">Jak to probíhá</span>
-        <h2 class="fz-h2">Tři kroky k penězům</h2>
-        <div class="fz-stepper reveal">
-          <div class="fz-stepper__step">
-            <span class="fz-stepper__num">1</span>
-            <h3>Ozvěte se</h3>
-            <p>Vyplníte krátký formulář, nebo zavoláte na 771 528 747. Chceme jen jméno a kontakt, žádné rodné číslo ani výkazy.</p>
-          </div>
-          <div class="fz-stepper__step">
-            <span class="fz-stepper__num">2</span>
-            <h3>Připravíme nabídku</h3>
-            <p>Specialista posoudí váš majetek a do 24 hodin máte na stole nezávaznou nabídku se všemi čísly.</p>
-          </div>
-          <div class="fz-stepper__step">
-            <span class="fz-stepper__num">3</span>
-            <h3>Peníze jsou u vás</h3>
-            <p>Smlouvu přivezeme k podpisu k vám domů či do firmy. Po podpisu máte peníze na účtu do 48 hodin.</p>
-          </div>
-        </div>
+        <div class="fz-prose">
+          <h2>Úvodem</h2>
+          <p>Společnost Firemní záložna a.s. (IČO 055 62 597) přijímá oznámení podle zákona č. 171/2023 Sb., o ochraně oznamovatelů, týkající se možného protiprávního jednání, k němuž došlo nebo má dojít v souvislosti s prací nebo jinou obdobnou činností. Totožnost oznamovatele i obsah oznámení jsou důvěrné a chráněné.</p>
 
-        <div class="fz-prose" style="margin-top:64px;">
-          <h2>Co najdete v nezávazné nabídce</h2>
+          <h2>Jak podat oznámení</h2>
+          <h3>Písemně</h3>
           <ul>
-            <li>výši úvěru a úrokovou sazbu (od 9,9 % p.a.),</li>
-            <li>orientační měsíční splátku a délku splácení,</li>
-            <li>všechny poplatky a RPSN, žádné položky schované v drobném písmu,</li>
-            <li>podmínky předčasného splacení.</li>
+            <li>E-mailem na <a href="mailto:oznameni@cfg.cz">oznameni@cfg.cz</a></li>
+            <li>Poštou na adresu: Firemní záložna a.s. – whistleblowing, Vinohradská 2828/151, 130 00 Praha 3, s poznámkou „Whistleblowing – NEOTVÍRAT – POUZE K RUKÁM POVĚŘENÉ OSOBY".</li>
           </ul>
-          <p>Nabídka vás k ničemu nezavazuje. Když se rozhodnete jinak, nic se neděje.</p>
-
-          <h2>Jaké dokumenty budete potřebovat</h2>
+          <h3>Ústně</h3>
           <ul>
-            <li><strong>Občanský průkaz</strong> pro ověření totožnosti.</li>
-            <li><strong>IČO</strong>, úvěr poskytujeme podnikatelům a firmám na podnikatelské účely.</li>
-            <li><strong>Doklady k zástavě</strong>: u nemovitosti stačí adresa či list vlastnictví (zbytek si dohledáme v katastru), u vozidel a strojů technický průkaz nebo doklad o vlastnictví.</li>
+            <li>Telefonicky na +420 226 296 025 (Po–Pá 9:00–15:00).</li>
+            <li>Osobně po předchozí dohodě v sídle společnosti.</li>
           </ul>
-          <p>Výkazy, daňová přiznání ani reporty po vás v prvním kroku nechceme. Úvěr je zajištěn majetkem, proto se obejdeme bez bankovního papírování.</p>
 
-          <h2>Co znamená „smlouvu přivezeme"?</h2>
-          <p>Přesně to, co říkáme. Žádný anonymní online proces ani fronta na pobočce. <strong>Specialista za vámi přijede osobně</strong>, smlouvu s vámi projde lidskou řečí, zodpoví všechny otázky a podepíšete na místě. Vy se můžete dál věnovat podnikání.</p>
+          <h2>Odpovědná osoba</h2>
+          <p>Oznámení přijímá a vyřizuje příslušná pověřená osoba: <strong>Michaela Bečvářová</strong>.</p>
+
+          <h2>Další kanály pro oznámení</h2>
+          <p>Oznámení můžete podat také prostřednictvím externího oznamovacího systému Ministerstva spravedlnosti. V případě porušení AML předpisů se lze obrátit na Finanční analytický úřad (<a href="mailto:reditel@fau.mfcr.cz">reditel@fau.mfcr.cz</a>).</p>
+
+          <h2>Sídlo společnosti</h2>
+          <p>Firemní záložna a.s., Vinohradská 2828/151, 130 00 Praha 3.</p>
         </div>
       </div>
     </section>

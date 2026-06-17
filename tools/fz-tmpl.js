@@ -44,9 +44,10 @@ const T = {
     navHead: 'Navigace', contactHead: 'Kontakt', groupHead: 'Skupina CFG',
     groupDesc: 'Jsme členem investiční skupiny CFG — financování, pohledávky a nemovitosti pod jednou střechou.',
     hours: 'Po–Pá 9–17',
-    legalOperator: '[DOPLNIT: provozovatel, IČO, sídlo]',
+    legalOperator: 'Firemní záložna a.s. · Vinohradská 2828/151, 130 00 Praha 3 · IČO: 055 62 597 · sp. zn. B 22004, Městský soud v Praze',
     legalPrivacy: 'Ochrana osobních údajů', privacyHref: '/ochrana-osobnich-udaju/',
-    legalCookies: 'Zásady cookies', cookiesHref: '/cookies/',
+    legalCookies: 'Zásady zpracování cookies', cookiesHref: '/zasady-zpracovani-cookies/',
+    legalWhistle: 'Ochrana oznamovatelů', whistleHref: '/ochrana-oznamovatelu/',
     legalCookieSettings: 'Nastavení cookies',
     copy: '© 2026 Firemní záložna',
     footNav: [
@@ -55,7 +56,7 @@ const T = {
     ],
     sticky: 'Zavolejte mi — 771 528 747',
     ckTitle: 'Cookies na tomto webu',
-    ckText: 'Nezbytné cookies potřebujeme pro chod webu. Analytické a marketingové použijeme jen s vaším souhlasem. <a href="/cookies/">Zásady cookies</a>',
+    ckText: 'Nezbytné cookies potřebujeme pro chod webu. Analytické a marketingové použijeme jen s vaším souhlasem. <a href="/zasady-zpracovani-cookies/">Zásady zpracování cookies</a>',
     ckNecessary: 'Nezbytné (vždy aktivní)', ckAnalytics: 'Analytické', ckMarketing: 'Marketingové',
     ckSave: 'Uložit vybrané', ckAll: 'Přijmout vše', ckNone: 'Odmítnout', ckSettings: 'Nastavení',
     ctaBandTitle: 'Nabídku máte na stole do 24 hodin',
@@ -263,6 +264,7 @@ ${navLinks}
         <div class="fz-footer__bottom-links">
           <a href="${t.privacyHref}">${t.legalPrivacy}</a>
           <a href="${t.cookiesHref}">${t.legalCookies}</a>
+          <a href="${t.whistleHref}">${t.legalWhistle}</a>
           <a href="#" data-cookie-settings>${t.legalCookieSettings}</a>
         </div>
       </div>

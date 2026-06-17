@@ -41,6 +41,10 @@ const REDIRECTS = {
   '/covid-statni-pomoc/': '/',
   '/faq': '/caste-dotazy/',
   '/faq/': '/caste-dotazy/',
+  '/cena': '/',
+  '/cena/': '/',
+  '/cookies': '/zasady-zpracovani-cookies/',
+  '/cookies/': '/zasady-zpracovani-cookies/',
   // EN verze zatím vypnutá — staré EN cesty vedeme na homepage
   '/en': '/',
   '/en/': '/',

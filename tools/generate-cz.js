@@ -304,60 +304,222 @@ pages.push({
 /* ---------- /ochrana-osobnich-udaju/ ---------- */
 pages.push({
   lang: 'cs', path: '/ochrana-osobnich-udaju/', altPath: '/en/privacy/',
-  title: 'Ochrana osobních údajů — Firemní záložna',
-  desc: 'Informace o zpracování osobních údajů na webu firemnizalozna.cz — správce, účely, právní tituly, doba uchování a vaše práva.',
+  title: 'Informace o zpracování osobních údajů — Firemní záložna',
+  desc: 'Informace o zpracování osobních údajů společností Firemní záložna a.s.: správce, účely, právní tituly, příjemci, doba uchování a vaše práva dle GDPR.',
   kicker: 'Právní informace',
-  h1: 'Ochrana osobních údajů',
-  sub: 'Jak nakládáme s vašimi osobními údaji. Návrh textu — před spuštěním projde právní revizí dle skupinového standardu.',
+  h1: 'Informace o zpracování osobních údajů',
+  sub: 'Vaše práva a povinnosti související se zpracováním osobních údajů společností Firemní záložna a.s.',
   noForm: true,
   content: `        <div class="fz-prose">
-          <p><em style="color:var(--fz-accent-dark);">[NÁVRH K PRÁVNÍ REVIZI — doplnit dle skupinového vzoru CFG]</em></p>
-          <h2>Správce osobních údajů</h2>
-          <p><span style="color:var(--fz-accent-dark);">[DOPLNIT: název provozovatele, IČO, sídlo]</span>, kontakt: <a href="mailto:info@firemnizalozna.cz">info@firemnizalozna.cz</a>, tel. 771 528 747.</p>
-          <h2>Jaké údaje zpracováváme a proč</h2>
+          <h2>Úvodem</h2>
+          <p>Níže naleznete informace o Vašich právech a povinnostech souvisejících se zpracováním Vašich osobních údajů společností Firemní záložna a.s.</p>
+          <p>Vzhledem k tomu, že při zpracování osobních údajů dodržujeme všechny relevantní právní předpisy, především obecné nařízení EU č. 2016/679, o ochraně osobních údajů (dále jen „GDPR") a zákon č. 110/2019 Sb., o zpracování osobních údajů (dále jen „zákon o zpracování osobních údajů"), plníme tímto svou informační povinnost předložit Vám přehledné a srozumitelné informace o tom:</p>
           <ul>
-            <li><strong>Kontaktní formulář (poptávka úvěru):</strong> jméno, telefon, e-mail, obsah zprávy a údaje z kalkulačky (výše, délka, orientační splátka). Účel: vyřízení vaší poptávky a příprava nezávazné nabídky. Právní titul: provedení opatření před uzavřením smlouvy (čl. 6 odst. 1 písm. b) GDPR) a souhlas.</li>
-            <li><strong>Technické údaje webu:</strong> v rozsahu uděleného souhlasu s cookies (viz <a href="/cookies/">Zásady cookies</a>).</li>
+            <li>kdo je správce a na koho se můžete obrátit, pokud máte dotaz týkající se zpracování osobních údajů;</li>
+            <li>jaké osobní údaje shromažďujeme;</li>
+            <li>z jakých zdrojů osobní údaje získáváme;</li>
+            <li>zda jste povinni nám osobní údaje poskytnout;</li>
+            <li>pro jaké účely zpracováváme osobní údaje bez Vašeho souhlasu;</li>
+            <li>pro jaké účely zpracováváme osobní údaje pouze s Vaším souhlasem;</li>
+            <li>jakým způsobem osobní údaje zpracováváme a jak je chráníme;</li>
+            <li>komu osobní údaje předáváme;</li>
+            <li>jakou dobu osobní údaje uchováváme; a</li>
+            <li>jaká máte práva v souvislosti se zpracováním osobních údajů.</li>
           </ul>
-          <h2>Doba uchování</h2>
-          <p>Údaje z poptávky uchováváme po dobu jednání o uzavření smlouvy, nejdéle <span style="color:var(--fz-accent-dark);">[DOPLNIT: doba dle skupinového standardu]</span>. Poté je smažeme.</p>
-          <h2>Komu údaje předáváme</h2>
-          <p>Údaje zpracováváme v rámci skupiny CFG a předáváme pouze zpracovatelům nezbytným pro vyřízení poptávky (IT infrastruktura, doručování zpráv). Údaje nepředáváme do třetích zemí mimo EU/EHP.</p>
-          <h2>Vaše práva</h2>
+
+          <h2>Na koho se můžete obrátit, pokud máte dotaz týkající se zpracování osobních údajů</h2>
+          <p>Osobním údajem je každá informace vztahující se k identifikované či identifikovatelné fyzické osobě (subjektu údajů).</p>
+          <p>Subjektem údajů je fyzická osoba, jíž se osobní údaje týkají, jedná se například o osobu, která požádá správce o poskytnutí služby nebo která je nebo bude ve smluvním či jiném právním vztahu ke správci (dále jen „Vy"). Subjektem údajů nejsou právnické osoby.</p>
+          <p>Zpracováním jsou jakékoliv operace nebo soubor operací, které jsou prováděny s osobními údaji nebo soubory osobních údajů pomocí či bez pomoci automatizovaných postupů, jako je shromáždění, zaznamenání, uspořádání, strukturování, uložení, přizpůsobení nebo pozměnění, vyhledání, nahlédnutí, použití, zpřístupnění přenosem, šíření nebo jakékoli jiné zpřístupnění, seřazení či zkombinování, omezení, výmaz nebo zničení.</p>
+          <p>Správcem je ten, kdo určuje účel a prostředky zpracování osobních údajů, provádí zpracování a odpovídá za něj. Správcem Vašich osobních údajů jsme my, společnost Firemní záložna a.s., sídlem Vinohradská 2828/151, Praha 3, 130 00, IČO: 055 62 597, zapsaná v obchodním rejstříku vedeném Městským soudem v Praze, pod sp. zn. B 22004 (dále jen „Správce" nebo „my"). Náš e-mail je <a href="mailto:info@firemnizalozna.cz">info@firemnizalozna.cz</a> a tel. číslo je +420 779 998 121.</p>
+          <p>Za účelem ochrany osobních údajů jsme ustanovili pověřence pro ochranu osobních údajů, který mimo jiné dbá na to, aby veškeré zpracování osobních údajů u Správce probíhalo řádně a v souladu s právní úpravou. E-mail pověřence je <a href="mailto:dpo@firemnizalozna.cz">dpo@firemnizalozna.cz</a> a tel. číslo pověřence je +420 226 296 052.</p>
+          <p>Zpracovatelem je ten, koho si Správce najímá, aby pro něj prováděl s osobními údaji zpracovatelské operace (například zprostředkovatel nebo společnost zpracovávající účetnictví).</p>
+
+          <h2>Jaké osobní údaje shromažďujeme</h2>
+          <p>Zpracováváme pouze osobní údaje, které nám umožní poskytovat řádně naše služby, dodržovat právní povinnosti a chránit naše oprávněné zájmy. Údaje shromažďujeme především o našich klientech, včetně potenciálních klientů, kteří se o naše služby a produkty zajímají nebo které jsme s naší nabídkou oslovili. Dále zpracováváme dle konkrétní situace údaje o dalších osobách, například o zástavcích, ručitelích, zástupcích klienta na základě plné moci nebo zákona, spoludlužnících, manželovi klienta atp.</p>
+          <p>V případě, že projevíte zájem o produkty a služby, uchováváme Vámi poskytnuté osobní údaje, které nám umožní Vás kontaktovat, tedy jméno, příjmení, telefon a e-mailovou adresu. Tyto osobní údaje zpracováváme proto, abychom Vás mohli kontaktovat, identifikovat a pokračovat v postupu při uzavírání smlouvy.</p>
+          <p>Za účelem poskytování našich služeb a pro uzavření nezbytných smluv k těmto službám (zejména poskytování podnikatelských úvěrů) shromažďujeme a zpracováváme kromě výše uvedených osobních údajů Vaše další identifikační údaje, kterými jsou titul, příp. datum narození (pokud nebylo rodné číslo přiděleno), místo narození, pohlaví, adresu trvalého, případně jiného pobytu, státní občanství, IČO, číslo Vašeho bankovního účtu, druh, číslo a dobu platnosti průkazu totožnosti a orgán, který průkaz vydal.</p>
+          <p>Abychom Vám mohli v souladu s právními předpisy poskytnout úvěr, zpracováváme dále soubor Vámi poskytnutých informací týkajících se Vaší bonity, důvěryhodnosti a platební morálky a informace získané od zprostředkovatelů, obchodních partnerů, členů skupiny Comfort Finance Group CFG, popř. z registrů klientských informací.</p>
+          <p>Pro plnění povinností dle zákona č. 253/2008 Sb., o některých opatřeních proti legalizaci výnosů z trestné činnosti a financování terorismu, zpracováváme Vaše rodné číslo. S Vaším souhlasem zpracováváme Vaše rodné číslo také za účelem jednoznačné identifikace v informačních systémech skupiny Comfort Finance Group CFG a v případě poskytování úvěru pro účely ověření Vaší bonity, důvěryhodnosti a platební morálky v registrech klientských informací.</p>
+          <p>Vaše osobní údaje zpracováváme pouze v nezbytném rozsahu pro příslušný účel. Pokud jste nám k tomu udělili souhlas, využíváme výše uvedené osobní údaje i k dalším účelům (viz část Pro jaké účely zpracováváme osobní údaje pouze s Vaším souhlasem).</p>
+
+          <h2>Z jakých zdrojů osobní údaje získáváme</h2>
+          <p>Osobní údaje získáváme z několika zdrojů, a to vždy v souladu s právními předpisy na základě jednoho nebo více právních titulů.</p>
+          <p>Základním zdrojem osobních údajů o Vás jste pro nás Vy sami. Osobní údaje nám sdělujete zejména prostřednictvím webového formuláře nebo při telefonickém hovoru v souvislosti s jednáním o uzavření smluvního či jiného právního vztahu.</p>
+          <p>Dalším důležitým zdrojem, s nímž pracujeme, jsou tzv. veřejné zdroje, kdy se jedná o osobní údaje z veřejně přístupných rejstříků, seznamů a evidencí (obchodní rejstřík, živnostenský rejstřík, katastr nemovitostí, insolvenční rejstřík apod.) a z dalších veřejných zdrojů (včetně vybraných, pro řízení rizik relevantních informací, které o sobě zveřejníte nebo jsou Vámi zveřejněny na internetu a sociálních sítích).</p>
+          <p>Jestliže k tomu od Vás máme souhlas, získáváme údaje dále též od zprostředkovatelů, obchodních partnerů či od členů skupiny Comfort Finance Group CFG, pokud jde o nabídku služeb a produktů členů skupiny.</p>
+          <p>Vaše osobní údaje mohou dále též vznikat přímo i u nás, a to jak používáním našich služeb a produktů, tak naší interní činností (například rating klienta).</p>
+
+          <h2>Jste povinni nám osobní údaje poskytnout?</h2>
+          <p>Při uzavření a trvání smluvního vztahu jsme povinni zjišťovat a zpracovávat stanovené osobní údaje vyplývající z právních předpisů. K takovému zpracování není třeba Vašeho souhlasu a v případě, že nám právními předpisy požadované osobní údaje nesdělíte, nebude možné poskytnout naše produkty a služby. Obdobně se tak může stát v případě, že je poskytnutí údajů nezbytné k uzavření a plnění smlouvy s Vámi, plnění našich právních povinností nebo k ochraně našich oprávněných zájmů.</p>
+          <p>V některých případech od Vás můžeme žádat udělení souhlasu se zpracováním osobních údajů k určitému účelu. Takový souhlas je vždy dobrovolný a pokud nám ho neposkytnete, nebude nijak omezen přístup k naší službě nebo produktu. Pokud souhlas udělíte, můžete ho kdykoliv odvolat.</p>
+
+          <h2>Pro jaké účely zpracováváme osobní údaje bez Vašeho souhlasu</h2>
+          <p>Zpracování osobních údajů bez Vašeho souhlasu je námi prováděno zejména pro tyto účely:</p>
           <ul>
-            <li>právo na přístup k údajům a jejich kopii,</li>
-            <li>právo na opravu a výmaz,</li>
-            <li>právo vznést námitku a právo na omezení zpracování,</li>
-            <li>právo na přenositelnost,</li>
-            <li>právo odvolat souhlas,</li>
-            <li>právo podat stížnost u Úřadu pro ochranu osobních údajů (uoou.gov.cz).</li>
+            <li>plnění povinností vyplývajících z právních předpisů, přičemž se jedná především o:
+              <ul>
+                <li>provádění Vaší identifikace a plnění dalších povinností dle zákona č. 253/2008 Sb., o některých opatřeních proti legalizaci výnosů z trestné činnosti a financování terorismu;</li>
+                <li>plnění povinností dle zákona č. 89/2012 Sb., občanský zákoník;</li>
+                <li>plnění povinností dle zákona č. 563/1991 Sb., o účetnictví.</li>
+              </ul>
+            </li>
+            <li>plnění smluvních povinností ze smlouvy uzavřené s Vámi, kdy tento účel zahrnuje i předávání Vašich osobních údajů třetím osobám, které využíváme pro plnění smluvních povinností, jejichž seznam je uveden v části Komu osobní údaje předáváme;</li>
+            <li>za účelem ochrany našich práv a právem chráněných zájmů, například za účelem vymáhání pohledávek a uplatnění jiných nároků u soudů, přičemž tento účel zahrnuje i předání osobních údajů mezi společnostmi ve skupině Comfort Finance Group CFG pro posouzení možnosti získat požadovaný produkt a pro zajištění ochrany našich práv a právem chráněných zájmů;</li>
+            <li>uchování a archivování údajů na základě a v souladu s právními předpisy.</li>
           </ul>
-          <p>Pro uplatnění práv nás kontaktujte na <a href="mailto:info@firemnizalozna.cz">info@firemnizalozna.cz</a>.</p>
+          <p>Při výkonu své činnosti jsme povinni postupovat obezřetně, s odbornou péčí a chránit zájmy nejen Vaše, ale i zájmy našeho vlastníka. V rámci plnění této povinnosti využíváme své příslušnosti ke skupině Comfort Finance Group CFG a spolupracujeme se společnostmi ve skupině, kde dochází k výměně informací týkajících se Vaší platební morálky, důvěryhodnosti a bonity. Na základě této spolupráce je tudíž možné lépe posoudit, zda je zvolený produkt pro Vás vhodný a odpovídá požadavkům obou smluvních stran.</p>
+
+          <h2>Pro jaké účely zpracováváme osobní údaje pouze s Vaším souhlasem</h2>
+          <p>Zpracování osobních údajů, které pro nás nevyplývá z právních předpisů a pro které nemáme právní titul, může být prováděno jen s Vaším souhlasem. Poskytnutí takového souhlasu je zcela na Vašem rozhodnutí a můžete ho kdykoliv odvolat. S Vaším souhlasem zpracováváme osobní údaje zejména pro tyto účely:</p>
+          <h3>Vytvoření a předání nabídky služeb společností náležejících do skupiny Comfort Finance Group CFG</h3>
+          <p>Jestliže nám udělíte souhlas k předání osobních údajů (včetně rodného čísla) za účelem obdržení informací o produktech a službách společností, které patří do skupiny Comfort Finance Group CFG, mohou Vám být zasílány zejména marketingové informace, a to e-mailem, adresovaným tiskem nebo prostřednictvím SMS. Pro možnost vytvořit nabídku plně odpovídající Vašim požadavkům jsou využívány i informace o tom, jaké naše služby využíváte nebo vyhledáváte. Přehled společností náležejících do skupiny Comfort Finance Group CFG naleznete v části Komu osobní údaje předáváme.</p>
+          <h3>Pořízení a uchovávání kopií osobních dokladů, není-li vyžadováno zákony</h3>
+          <p>Zejména pro účely bezpečnosti a ochrany Vašich zájmů a Vaší jednoznačné identifikace pořizujeme a uchováváme kopie Vašich průkazů totožnosti. Pokud není pořízení kopie dokladu nutnou podmínkou pro poskytnutí služby, činíme pouze opis údajů z průkazu totožnosti.</p>
+          <h3>Používání rodného čísla pro účely jednoznačné identifikace v informačních systémech skupiny Comfort Finance Group CFG</h3>
+          <p>Pro využití Vašeho rodného čísla jako jedinečného identifikátoru v našich systémech je nutný Váš souhlas. Smyslem takového využití je především Vaše jednoduchá a jednoznačná identifikace při poskytování služeb a omezení možných chyb, které vznikají při tom, když se jiné identifikační osobní údaje našich klientů shodují. Tímto zároveň plníme svou povinnost vykonávat činnosti obezřetně a chránit zájmy svých klientů.</p>
+          <h3>Vytvoření a předání nabídky služeb a produktů našich obchodních partnerů</h3>
+          <p>Jestliže nám udělíte souhlas k předání osobních údajů za účelem obdržení informací o produktech a službách našich obchodních partnerů, mohou Vám být zasílány zejména marketingové informace, a to e-mailem, adresovaným tiskem nebo prostřednictvím SMS. Přehled našich obchodních partnerů naleznete v části Komu osobní údaje předáváme.</p>
+
+          <h2>Jakým způsobem osobní údaje zpracováváme a jak je chráníme</h2>
+          <p>Vaše osobní údaje důsledně chráníme. Zpracování osobních údajů provádíme manuálně i v elektronických informačních systémech, které podléhají stálé a přísné fyzické, technické i procedurální kontrole. Pokud využíváme cloudových úložišť, jsou zásadně umístěna v rámci EU a vždy je zajištěn vysoký stupeň zabezpečení údajů.</p>
+          <p>Veškeré osoby, které s osobními údaji přicházejí do styku v rámci plnění svých pracovních či smluvně převzatých povinností, jsou vázány mlčenlivostí a jsou řádně proškoleny.</p>
+          <p>Vaše osobní údaje zásadně zpracováváme sami, případně uvnitř skupiny Comfort Finance Group CFG. Údaje předáváme mimo skupinu Comfort Finance Group CFG pouze, pokud k tomu máme Váš souhlas nebo pokud to vyžadují právní předpisy.</p>
+          <p>Pokud někoho dalšího pověříme výkonem určité činnosti tvořící součást našich služeb, může při ní docházet ke zpracování příslušných osobních údajů. Takto pověřené osoby se stávají zpracovatelem osobních údajů. Zpracovatel je oprávněn nakládat s údaji výhradně pro účely výkonu činnosti, ke které jsme ho pověřili. V takovém případě není pro účely výkonu zpracovatelské činnosti vyžadován Váš souhlas, neboť takové zpracování umožňuje přímo právní předpis.</p>
+
+          <h2>Komu osobní údaje předáváme</h2>
+          <p>Vaše osobní údaje předáváme pouze v souladu s právními předpisy a pokud je vyžadován, tak pouze v souladu s Vaším souhlasem. Vaše osobní údaje nejsou předávány do třetích zemí mimo EU. Vaše osobní údaje předáváme následujícím subjektům:</p>
+          <ul>
+            <li>subjektům v rámci plnění povinností, které nám stanoví právní předpisy, například v souladu s AML zákonem, a to zejména soudům, orgánům činným v trestním řízení, správcům daně, soudním exekutorům, finančnímu arbitrovi, orgánům sociálního zabezpečení, registrům klientských informací (např. CBCB (Czech Banking Credit Bureau, a.s.), sídlem Štětkova 1638/18, Nusle, 140 00 Praha 4, IČ 26199696; CNCB (Czech Non-Banking Credit Bureau, z.s.p.o.), sídlem Štětkova 1638/18, Nusle, 140 00 Praha 4, IČ 71236384), orgánům dohledu v rámci výkonu jejich zákonných pravomocí;</li>
+            <li>dalším subjektům, pokud je to nezbytné pro ochranu našich práv a právem chráněných zájmů, např. soudům, exekutorům, dražebníkům apod., v rozsahu nezbytném pro uplatnění našich nároků;</li>
+            <li>osobám námi pověřeným k plnění jejích smluvních a zákonných povinností, včetně realizace práv ze smluvních vztahů, například účetním, poskytovatelům IT služeb, advokátům;</li>
+            <li>členům skupiny Comfort Finance Group CFG, pokud jde o vyhodnocení platební morálky, důvěryhodnosti a bonity, případně o nabídku jejich služeb a produktů, kterými jsou:</li>
+          </ul>
+          <table>
+            <thead><tr><th>Název subjektu</th><th>Adresa</th><th>IČ</th></tr></thead>
+            <tbody>
+              <tr><td>CFG Real Estate s.r.o.</td><td>Vinohradská 2828/151, 130 00 Praha 3</td><td>03628248</td></tr>
+              <tr><td>CFG Private Equity a.s.</td><td>Vinohradská 2828/151, 130 00 Praha 3</td><td>06504591</td></tr>
+              <tr><td>Comfort Money s.r.o.</td><td>Vinohradská 2828/151, 130 00 Praha 3</td><td>24209589</td></tr>
+              <tr><td>CFG Funds s.r.o.</td><td>Vinohradská 2828/151, 130 00 Praha 3</td><td>05593832</td></tr>
+            </tbody>
+          </table>
+          <p>obchodním partnerům, pokud jde o vyhodnocení platební morálky, důvěryhodnosti a bonity, případně o nabídku jejich služeb a produktů, kterými jsou:</p>
+          <table>
+            <thead><tr><th>Název subjektu</th><th>Adresa</th><th>IČ</th></tr></thead>
+            <tbody>
+              <tr><td>CEE Real Estate a.s.</td><td>Vinohradská 2828/151, 130 00 Praha 3</td><td>05895464</td></tr>
+              <tr><td>Klub investorů a traderů s.r.o.</td><td>Vinohradská 2828/151, 130 00 Praha 3</td><td>24161179</td></tr>
+              <tr><td>eastbutton s.r.o.</td><td>Vinohradská 2828/151, 130 00 Praha 3</td><td>29363209</td></tr>
+              <tr><td>Catalyst Equity s.r.o.</td><td>Ondříčkova 2166/14, 130 00 Praha 3</td><td>24211559</td></tr>
+              <tr><td>DQ Holding s.r.o.</td><td>Ondříčkova 2166/14, 130 00 Praha 3</td><td>05175780</td></tr>
+            </tbody>
+          </table>
+
+          <h2>Jakou dobu osobní údaje uchováváme</h2>
+          <p>Osobní údaje uchováváme po celou dobu, po kterou Vám poskytujeme své služby a produkty. Po skončení spolupráce omezujeme jejich použití, uchováváme je ale nadále. Máme totiž zákonnou povinnost uchovávat je po dobu dalších 10 let (archivační povinnost dle AML zákona a daňových předpisů).</p>
+          <p>Pokud nám sdělíte svůj zájem, abychom Vás kontaktovali za účelem nabídky služeb a produktů, ale k žádným konkrétním jednáním nedojde ani nám neudělíte souhlas k dalšímu zpracování Vašich osobních údajů, tyto údaje smažeme 1 měsíc poté, co jste nám je poskytli.</p>
+          <p>Pokud požádáte o poskytnutí podnikatelského úvěru, ale z jakéhokoliv důvodu nedojde k uzavření úvěrové smlouvy, zpracováváme Vaše osobní údaje získané v rámci žádosti a posuzování poptávky nejvýše po dobu 1 roku od zamítnutí nebo zpětvzetí žádosti.</p>
+          <p>Osobní údaje, které zpracováváme na základě uděleného souhlasu, uchováváme po dobu platnosti tohoto souhlasu.</p>
+          <p>Pokud zpracováváme údaje výhradně pro účely ochrany oprávněného zájmu, uchováváme je jen po dobu existence tohoto oprávněného zájmu (např. po dobu promlčecí lhůty).</p>
+
+          <h2>Jaká máte práva v souvislosti se zpracováním osobních údajů</h2>
+          <p>V oblasti ochrany osobních údajů máte právními předpisy garantována určitá práva, která vůči nám můžete uplatnit na e-mailu <a href="mailto:info@firemnizalozna.cz">info@firemnizalozna.cz</a>, telefonním čísle +420 779 998 121 nebo na adrese našeho sídla, tj. Vinohradská 2828/151, Praha 3, 130 00. Dále je Vám k dispozici i náš pověřenec pro ochranu osobních údajů na e-mailu <a href="mailto:dpo@firemnizalozna.cz">dpo@firemnizalozna.cz</a> a telefonním čísle +420 226 296 052.</p>
+          <h3>Právo na přístup k osobním údajům</h3>
+          <p>Máte právo na přístup ke svým osobním údajům a dalším souvisejícím informacím (např. účel, kategorie osobních údajů, doba uchování, zdroj). Máte právo požadovat i kopii zpracovávaných osobních údajů. Za její opakované poskytnutí Vám však můžeme účtovat poplatek odpovídající nákladům na zpracování a poskytnutí informace.</p>
+          <h3>Právo na přenositelnost údajů</h3>
+          <p>Pokud je pro Vás vhodné z hlediska usnadnění komunikace s jiným poskytovatelem služeb, máte právo po nás vyžadovat předání osobních údajů, které jsme od Vás nebo z jiných zdrojů získali za účelem zajištění poskytování našich služeb a produktů nebo na základě Vašeho souhlasu.</p>
+          <h3>Právo na revizi rozhodnutí založeného výhradně na automatizovaném zpracování</h3>
+          <p>V současné době neprovádíme rozhodování o poskytnutí služeb a produktů, které by bylo výhradně automatizované. Pokud bychom v rámci snah o zkvalitnění a zrychlení poskytovaných služeb a produktů zavedli například automatizované hodnocení a schvalování žádostí o poskytnutí úvěrů zcela bez lidského zásahu a Vy byste nesouhlasili s výsledkem posouzení, mohli byste takové rozhodnutí zpochybnit, vyjádřit se k němu a požádat nás o jeho přezkum.</p>
+          <h3>Právo na opravu osobních údajů</h3>
+          <p>Jestliže jsou Vaše osobní údaje nesprávné, nepřesné nebo došlo k jejich změně, máte právo na jejich opravu. S přihlédnutím k účelům, pro které tyto osobní údaje zpracováváme, máte rovněž právo na jejich doplnění.</p>
+          <h3>Právo na výmaz osobních údajů</h3>
+          <p>Osobní údaje mažeme automaticky neprodleně poté, co ztratíme právní titul k jejich zpracování (např. uplynula zákonná archivační doba 10 let od ukončení smlouvy, pokud nestanoví jiný právní předpis jinak). Přesto můžete uplatnit právo na jejich výmaz.</p>
+          <h3>Právo na omezení zpracování osobních údajů</h3>
+          <p>Máte rovněž právo na omezení zpracování osobních údajů, a to zejména tehdy, pokud se budeme zabývat Vaší námitkou proti zpracování osobních údajů nebo upozorněním na nepřesnost údajů.</p>
+          <h3>Právo na odvolání souhlasu se zpracováním osobních údajů</h3>
+          <p>Jestliže nám udělíte souhlas se zpracováním osobních údajů, máte právo jej kdykoli odvolat, přičemž to samé platí i pro souhlas s použitím rodného čísla. Po odvolání souhlasu ukončíme zpracování osobních údajů, k nimž nemáme jiný právní titul než Váš souhlas.</p>
+          <h3>Právo podat námitku</h3>
+          <p>V případě, že si nepřejete, abychom pokračovali ve zpracování, které provádíme na základě ochrany svého oprávněného zájmu, můžete uplatnit tzv. námitku. To je možné udělat několika způsoby:</p>
+          <ul>
+            <li>přímo v našich obchodních sděleních je včleněna možnost zastavení jejich zasílání daným komunikačním kanálem;</li>
+            <li>pokud již nechcete, abychom Vám telefonovali, v rámci hovoru nám to prosím sdělte; a</li>
+            <li>námitku lze zaslat na naše kontakty (viz výše).</li>
+          </ul>
+          <p>Námitka by měla být odůvodněna. Mělo by z ní být zřejmé, proč se domníváte, že dané zpracování nepříznivě zasahuje do Vašeho soukromí nebo ochrany Vašich práv a právem chráněných zájmů. Následně vyhodnotíme, zdali je ochrana našeho oprávněného zájmu nebo třetích osob stále silnější než dopad na klienta či potenciálního klienta. To neplatí pro zpracování pro účel přímého marketingu, kde je zpracování ukončeno automaticky po obdržení námitky. Platí přitom, že i po odhlášení se z marketingové komunikace Vás nadále můžeme kontaktovat, a to kvůli obsluze a plnění svých práv a povinností.</p>
+          <h3>Právo podat stížnost ÚOOÚ</h3>
+          <p>Pokud nesouhlasíte s čímkoliv ohledně zpracování osobních údajů, vždy máte právo obrátit se se stížností na Úřad pro ochranu osobních údajů, Pplk. Sochora 27, 170 00 Praha 7, <a href="https://www.uoou.cz" target="_blank" rel="noopener">www.uoou.cz</a>.</p>
+          <p>Pokud jste nenalezli výše veškeré odpovědi na Vaše dotazy, které se týkají osobních údajů, nebo potřebujete některé informace podrobněji vysvětlit, pište na <a href="mailto:info@firemnizalozna.cz">info@firemnizalozna.cz</a> nebo volejte na +420 779 998 121. Současně je Vám k dispozici i náš pověřenec pro ochranu osobních údajů na telefonu +420 226 296 052 nebo e-mailu <a href="mailto:dpo@firemnizalozna.cz">dpo@firemnizalozna.cz</a>.</p>
         </div>`,
 });
 
-/* ---------- /cookies/ ---------- */
+/* ---------- /zasady-zpracovani-cookies/ ---------- */
 pages.push({
-  lang: 'cs', path: '/cookies/', altPath: '/en/cookies/',
-  title: 'Zásady cookies — Firemní záložna',
-  desc: 'Jaké cookies používá web firemnizalozna.cz, k čemu slouží a jak můžete spravovat svůj souhlas.',
+  lang: 'cs', path: '/zasady-zpracovani-cookies/', altPath: '/en/cookies/',
+  title: 'Zásady zpracování cookies — Firemní záložna',
+  desc: 'Jaké cookies web www.firemnizalozna.cz používá, k čemu slouží jednotlivé kategorie a jak můžete svůj souhlas kdykoli změnit nebo odvolat.',
   kicker: 'Právní informace',
-  h1: 'Zásady cookies',
+  h1: 'Zásady zpracování cookies',
   sub: 'Jaké cookies používáme, k čemu slouží a jak změníte své nastavení.',
   noForm: true,
   content: `        <div class="fz-prose">
-          <p><em style="color:var(--fz-accent-dark);">[NÁVRH K PRÁVNÍ REVIZI — doplnit dle skupinového vzoru CFG]</em></p>
+          <h2>Úvodem</h2>
+          <p>Tyto zásady popisují, jak web <strong>www.firemnizalozna.cz</strong> používá cookies. Při jejich zpracování dodržujeme všechny relevantní právní předpisy, především obecné nařízení EU č. 2016/679 (GDPR). Více o nakládání s osobními údaji najdete v <a href="/ochrana-osobnich-udaju/">Informacích o zpracování osobních údajů</a>.</p>
+
+          <h2>Co jsou cookies</h2>
+          <p>Cookies jsou malé datové soubory, které nám umožňují zaznamenat informace o Vaší návštěvě. Slouží k zajištění správného fungování webu, k jeho optimalizaci a ke zlepšení uživatelského zážitku. Část cookies je nezbytná pro chod webu, ostatní načítáme až na základě Vašeho souhlasu.</p>
+
           <h2>Kategorie cookies</h2>
           <ul>
-            <li><strong>Nezbytné</strong> — zajišťují základní chod webu a uložení vašeho souhlasu. Nelze je vypnout.</li>
-            <li><strong>Analytické</strong> — pomáhají nám pochopit, jak web používáte (návštěvnost, použití kalkulačky). Načítají se až po vašem souhlasu.</li>
-            <li><strong>Marketingové</strong> — slouží k měření kampaní. Načítají se až po vašem souhlasu.</li>
+            <li><strong>Nezbytné (funkční)</strong>: zajišťují základní chod webu a uložení Vašeho souhlasu. Jsou nezbytně nutné pro umožnění použití konkrétní služby, a proto je nelze vypnout.</li>
+            <li><strong>Předvolby</strong>: umožňují uložení předvoleb, které mění chování nebo vzhled webu (například zvolený jazyk).</li>
+            <li><strong>Statistické (analytické)</strong>: pomáhají nám pochopit, jak web používáte. Používají se výhradně pro anonymní statistické účely a načítají se až po Vašem souhlasu.</li>
+            <li><strong>Marketingové</strong>: slouží k vytvoření uživatelských profilů za účelem zasílání reklamy a měření kampaní. Načítají se až po Vašem souhlasu.</li>
           </ul>
+
           <h2>Správa souhlasu</h2>
-          <p>Souhlas můžete kdykoli změnit nebo odvolat:</p>
+          <p>Souhlas s analytickými a marketingovými cookies je dobrovolný a můžete jej kdykoli změnit nebo odvolat:</p>
           <p><button class="btn btn--primary" data-cookie-settings type="button">Otevřít nastavení cookies</button></p>
-          <h2>Jak dlouho souhlas platí</h2>
-          <p>Vaše volba se ukládá v prohlížeči. Analytické a marketingové nástroje se bez souhlasu nenačítají.</p>
+          <p>Vaše volba se ukládá ve Vašem prohlížeči. Analytické a marketingové nástroje se bez souhlasu nenačítají.</p>
+
+          <h2>Kontakt</h2>
+          <p>S dotazy k cookies a zpracování údajů se obraťte na <a href="mailto:dpo@firemnizalozna.cz">dpo@firemnizalozna.cz</a> nebo na telefon +420 226 296 052.</p>
+        </div>`,
+});
+
+/* ---------- /ochrana-oznamovatelu/ ---------- */
+pages.push({
+  lang: 'cs', path: '/ochrana-oznamovatelu/', altPath: '/en/whistleblowing/',
+  title: 'Ochrana oznamovatelů — Firemní záložna',
+  desc: 'Oznamování protiprávního jednání podle zákona č. 171/2023 Sb. ve společnosti Firemní záložna a.s. Jak a komu podat oznámení a jak chráníme oznamovatele.',
+  kicker: 'Právní informace',
+  h1: 'Oznamování protiprávního jednání',
+  sub: 'Firemní záložna a.s. přijímá oznámení podle zákona č. 171/2023 Sb., o ochraně oznamovatelů.',
+  noForm: true,
+  content: `        <div class="fz-prose">
+          <h2>Úvodem</h2>
+          <p>Společnost Firemní záložna a.s. (IČO 055 62 597) přijímá oznámení podle zákona č. 171/2023 Sb., o ochraně oznamovatelů, týkající se možného protiprávního jednání, k němuž došlo nebo má dojít v souvislosti s prací nebo jinou obdobnou činností. Totožnost oznamovatele i obsah oznámení jsou důvěrné a chráněné.</p>
+
+          <h2>Jak podat oznámení</h2>
+          <h3>Písemně</h3>
+          <ul>
+            <li>E-mailem na <a href="mailto:oznameni@cfg.cz">oznameni@cfg.cz</a></li>
+            <li>Poštou na adresu: Firemní záložna a.s. – whistleblowing, Vinohradská 2828/151, 130 00 Praha 3, s poznámkou „Whistleblowing – NEOTVÍRAT – POUZE K RUKÁM POVĚŘENÉ OSOBY".</li>
+          </ul>
+          <h3>Ústně</h3>
+          <ul>
+            <li>Telefonicky na +420 226 296 025 (Po–Pá 9:00–15:00).</li>
+            <li>Osobně po předchozí dohodě v sídle společnosti.</li>
+          </ul>
+
+          <h2>Odpovědná osoba</h2>
+          <p>Oznámení přijímá a vyřizuje příslušná pověřená osoba: <strong>Michaela Bečvářová</strong>.</p>
+
+          <h2>Další kanály pro oznámení</h2>
+          <p>Oznámení můžete podat také prostřednictvím externího oznamovacího systému Ministerstva spravedlnosti. V případě porušení AML předpisů se lze obrátit na Finanční analytický úřad (<a href="mailto:reditel@fau.mfcr.cz">reditel@fau.mfcr.cz</a>).</p>
+
+          <h2>Sídlo společnosti</h2>
+          <p>Firemní záložna a.s., Vinohradská 2828/151, 130 00 Praha 3.</p>
         </div>`,
 });
 
