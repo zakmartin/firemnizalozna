@@ -246,7 +246,7 @@
       sub: 'Nechte nám číslo — Aleš Mráz se vám ozve do 24 hodin v pracovní dny.',
       phone: 'Telefon *', phErr: 'Zkontrolujte prosím formát telefonu.',
       name: 'Jméno (nepovinné)',
-      gdpr: 'Souhlasím se <a href="' + relPrefix + 'ochrana-osobnich-udaju/" style="text-decoration:underline;">zpracováním osobních údajů</a> *',
+      gdpr: 'Souhlasím se <a href="' + relPrefix + 'souhlas-s-poskytnutim-osobnich-udaju/" style="text-decoration:underline;">zpracováním osobních údajů</a> *',
       gdprErr: 'Potvrďte prosím souhlas.',
       submit: 'Zavolejte mi', sending: 'Odesílám…',
       success: 'Děkujeme! Brzy se vám ozveme.',

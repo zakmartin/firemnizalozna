@@ -283,7 +283,7 @@ pages.push({
 
 /* ---------- /en/privacy/ ---------- */
 pages.push({
-  lang: 'en', path: '/en/privacy/', altPath: '/ochrana-osobnich-udaju/',
+  lang: 'en', path: '/en/privacy/', altPath: '/souhlas-s-poskytnutim-osobnich-udaju/',
   title: 'Privacy policy — Firemní záložna',
   desc: 'Information on the processing of personal data on firemnizalozna.cz — controller, purposes, legal bases, retention periods and your rights.',
   h1: 'Privacy policy',

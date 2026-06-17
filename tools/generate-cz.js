@@ -301,9 +301,9 @@ pages.push({
         </div>`,
 });
 
-/* ---------- /ochrana-osobnich-udaju/ ---------- */
+/* ---------- /souhlas-s-poskytnutim-osobnich-udaju/ (zachován původní slug z WP) ---------- */
 pages.push({
-  lang: 'cs', path: '/ochrana-osobnich-udaju/', altPath: '/en/privacy/',
+  lang: 'cs', path: '/souhlas-s-poskytnutim-osobnich-udaju/', altPath: '/en/consent-to-the-processing-of-personal-data/',
   title: 'Informace o zpracování osobních údajů — Firemní záložna',
   desc: 'Informace o zpracování osobních údajů společností Firemní záložna a.s.: správce, účely, právní tituly, příjemci, doba uchování a vaše práva dle GDPR.',
   kicker: 'Právní informace',
@@ -464,7 +464,7 @@ pages.push({
   noForm: true,
   content: `        <div class="fz-prose">
           <h2>Úvodem</h2>
-          <p>Tyto zásady popisují, jak web <strong>www.firemnizalozna.cz</strong> používá cookies. Při jejich zpracování dodržujeme všechny relevantní právní předpisy, především obecné nařízení EU č. 2016/679 (GDPR). Více o nakládání s osobními údaji najdete v <a href="/ochrana-osobnich-udaju/">Informacích o zpracování osobních údajů</a>.</p>
+          <p>Tyto zásady popisují, jak web <strong>www.firemnizalozna.cz</strong> používá cookies. Při jejich zpracování dodržujeme všechny relevantní právní předpisy, především obecné nařízení EU č. 2016/679 (GDPR). Více o nakládání s osobními údaji najdete v <a href="/souhlas-s-poskytnutim-osobnich-udaju/">Informacích o zpracování osobních údajů</a>.</p>
 
           <h2>Co jsou cookies</h2>
           <p>Cookies jsou malé datové soubory, které nám umožňují zaznamenat informace o Vaší návštěvě. Slouží k zajištění správného fungování webu, k jeho optimalizaci a ke zlepšení uživatelského zážitku. Část cookies je nezbytná pro chod webu, ostatní načítáme až na základě Vašeho souhlasu.</p>

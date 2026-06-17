@@ -43,8 +43,12 @@ const REDIRECTS = {
   '/faq/': '/caste-dotazy/',
   '/cena': '/',
   '/cena/': '/',
+  '/uver': '/jak-to-funguje/',
+  '/uver/': '/jak-to-funguje/',
   '/cookies': '/zasady-zpracovani-cookies/',
   '/cookies/': '/zasady-zpracovani-cookies/',
+  '/ochrana-osobnich-udaju': '/souhlas-s-poskytnutim-osobnich-udaju/',
+  '/ochrana-osobnich-udaju/': '/souhlas-s-poskytnutim-osobnich-udaju/',
   // EN verze zatím vypnutá — staré EN cesty vedeme na homepage
   '/en': '/',
   '/en/': '/',
